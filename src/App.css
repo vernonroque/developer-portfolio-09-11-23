@@ -1,14 +1,14 @@
 @font-face{
   font-family:'Gagalin';
-  src: url('./fonts/Gagalin-Regular.otf') format('otf');
+  src: url('./fonts/Gagalin-Regular.otf') format('opentype');
 }
 @font-face{
   font-family: 'Apercu';
-  src: url('./fonts/Apercu-Medium.otf') format('otf');
+  src: url('./fonts/Apercu-Medium.otf') format('opentype');
 }
 @font-face{
-  font-family:'League Spartan Medium';
-  src:url('./fonts/LeagueSpartan-Medium.ttf') format('ttf');
+  font-family:'League Spartan';
+  src:url('./fonts/LeagueSpartan-Medium.ttf') format('truetype');
 }
 
 .App {

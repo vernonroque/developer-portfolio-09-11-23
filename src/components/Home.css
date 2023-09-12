@@ -1,6 +1,10 @@
+@font-face{
+    font-family:'League Spartan Medium';
+    src:url('../fonts/LeagueSpartan-Medium.ttf') format('ttf');
+  }
+
 .home-container{
     width:100%;
-    height: 43.75rem;
     background-image:linear-gradient(
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)),url('../photos/ocean-home.jpg') ;
@@ -13,7 +17,7 @@
     flex-direction:column;
 }
 .home-title{
-    font-family:'League Spartan Medium';
+    font-family:'League Spartan';
     color:white;
     font-size:4rem;
     font-weight:bold;

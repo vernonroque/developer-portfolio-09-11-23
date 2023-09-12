@@ -4,17 +4,20 @@
     align-items:center;
     flex-direction:row;
     width:100%;
-    border: 2px solid red;
 }
 .navLink{
-    font-family:'League Spartan Medium';
-    margin-right:2rem;
+    font-family:'League Spartan';
+    margin-right:3rem;
     color:white;
     padding: 3px;
 }
 .navLink:hover{
     cursor:pointer;
-    background:blue;
+    background:#c9a0dc;
+    color:black;
+    padding:4px 3px;
+    border-radius:5px;
+    transition-duration: .25s;
 }
 .navLink, h1{
     font-size:1.5rem;

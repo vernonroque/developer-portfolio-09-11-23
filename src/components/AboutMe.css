@@ -1,5 +1,94 @@
 .aboutMe-container{
     width:100%;
-    height:43.75rem;
-    border:2px solid greenyellow;
+    background:#ffff;
+    min-height:100vh;
+}
+.aboutMe-title{
+    padding:3rem;
+    position:relative;
+    margin: 0 auto; 
+    text-align: center;
+    z-index:1;
+}
+.aboutMe-title > h1{
+    font-family:'League Spartan',Arial, Helvetica, sans-serif;
+    font-size:12rem;
+    font-weight:bold;
+    color:#f0f0f0
+}
+
+.aboutMe-inner-title{
+    position: absolute;
+    top: 50%; /* Adjust this value to vertically center the inner title */
+    left: 0;
+    right: 0;
+    transform: translateY(-10%); /* Vertically center the inner title */
+    z-index: 2;
+   
+}
+
+.aboutMe-inner-title > h2 {
+    font-family:'Apercu','Courier New', Courier, monospace;
+    font-size:3rem;
+    text-decoration:underline;
+    text-decoration-color:#c9a0dc;
+}
+.aboutMe-body{
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-gap:50px;
+    padding:50px;
+}
+
+ul{
+    list-style-type:none;
+    margin: 0 2rem;
+}
+
+.list-item{
+    text-align:left;
+    padding:1rem;
+    border-bottom:2px solid #c9a0dc;
+    font-family:'Apercu','Courier New', Courier, monospace;
+    font-size:1.2rem;
+    text-wrap:wrap;
+   
+}
+.paragraph >h2{
+    font-family:'League Spartan',Arial, Helvetica, sans-serif;
+    font-size:3rem;
+    margin:1.5rem;
+}
+.paragraph > p{
+    font-family:'Apercu','Courier New', Courier, monospace;
+}
+.name{
+    color:#c9a0dc;
+}
+.type{
+    font-weight:900;
+}
+.email{
+    color:#c9a0dc;
+}
+
+button{
+    font-family:'Apercu','Courier New', Courier, monospace;
+    margin:1rem;
+    padding:20px 30px;
+    border-radius: 30px;
+    border:none;
+    font-weight:bold;
+}
+button:hover{
+    cursor:pointer;
+    background:#c9a0dc;
+    transition-duration:.25s;
+}
+
+@media only screen and (max-width:1166px){
+    .aboutMe-body{
+        display:flex;
+        flex-direction:column;
+    }
 }

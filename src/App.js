@@ -6,6 +6,7 @@ import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import React, {useRef,useEffect} from 'react';
+import resumePDF from './Vernon-Resume-08-08-23.pdf';
 
 function App() {
   //initializing variables with useRef hook
@@ -33,12 +34,22 @@ function App() {
     return ContactRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
-  useEffect(()=>{
-    console.log('Home', HomeRef.current);
-    console.log(AboutMeRef.current);
+  // useEffect(()=>{
+  //   console.log('Home', HomeRef.current);
+  //   console.log(AboutMeRef.current);
 
 
-  },[AboutMeRef])
+  // },[AboutMeRef])
+
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = resumePDF;
+    link.download = './Vernon-Resume-08-08-23.pdf'; // Specify the desired file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  
   return (
     <div className="App">
       <Header
@@ -49,8 +60,8 @@ function App() {
        scrollToContact = {scrollToContact}
        />
       <Home HomeRef = {HomeRef}/>
-      <AboutMe AboutMeRef={AboutMeRef}/>
-      <Resume ResumeRef={ResumeRef}/>
+      <AboutMe AboutMeRef={AboutMeRef} downloadResume = {downloadResume}/>
+      <Resume ResumeRef={ResumeRef} downloadResume={downloadResume}/>
       <Portfolio PortfolioRef = {PortfolioRef}/>
       <Contact ContactRef = {ContactRef}/>
     </div>

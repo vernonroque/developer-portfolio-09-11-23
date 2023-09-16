@@ -1,0 +1,20 @@
+.educationCard{
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-direction:column;
+    background:white;
+    border-radius:5px;
+    margin:10px;
+    line-height:2rem;
+    padding:10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.educationCard >p{
+    margin-top:1rem;
+}
+.year-tab{
+    background:#c9a0dc;
+    padding:3px;
+    border-radius:5px;
+}

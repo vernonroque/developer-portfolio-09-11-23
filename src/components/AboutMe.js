@@ -1,7 +1,12 @@
 import React from 'react'
 import './AboutMe.css'
+import {FaDownload} from 'react-icons/fa';
 
-function AboutMe({AboutMeRef}) {
+function AboutMe({AboutMeRef,downloadResume}) {
+
+  function handleClick(){
+    return downloadResume();
+  }
 
   return (
     < div ref={AboutMeRef}>
@@ -22,7 +27,7 @@ function AboutMe({AboutMeRef}) {
               <li className= "list-item"><span className="type">Email:</span > <span className ="email">vroque88@gmail.com</span></li>
               <li className= "list-item"><span className="type">From:</span> Los Angeles, California</li>
               <li className= "list-item"><span className="type">Intent:</span> Aspiring Web Developer</li>
-              <button>Download CV</button>
+              <button className ="aboutMe-button" onClick={handleClick}>Download CV <FaDownload/></button>
             </ul>
            
             

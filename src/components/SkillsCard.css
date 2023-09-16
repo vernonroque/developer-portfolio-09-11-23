@@ -1,0 +1,29 @@
+.skillsCard{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    max-width:100%;
+    background:white;
+    border-radius:5px;
+    margin:10px;
+    flex-wrap:wrap;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.reactIcon{
+    font-size: 4rem;
+}
+.skillItem{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    margin:10px;
+}
+.skillItem > h3 {
+    font-family:'Apercu','Courier New', Courier, monospace;
+
+}
+
+  

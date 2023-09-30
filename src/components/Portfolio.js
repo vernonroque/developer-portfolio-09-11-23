@@ -1,8 +1,10 @@
 import React from 'react'
 import './Portfolio.css'
-import oceanImage from '../photos/ocean-home.jpg';
-import movieDatabase from '..//photos/movieDatabase.png';
+import movieDatabase from '../photos/movieDatabase.png';
 import ProjectItem from './ProjectItem';
+import amazonClone from '../photos/amazon-clone.png'
+import redditThumbnail from '../photos/reddit-thumbnail.png';
+import jammmingApp from '../photos/jammmingApp.png'
 
 function Portfolio({PortfolioRef}) {
   return (
@@ -21,6 +23,27 @@ function Portfolio({PortfolioRef}) {
             description = "An application that shows trending movies and popular movies currently. There is also a search feature"
             technologies = "React.js"
             title = "Movie Database"
+          />
+            <ProjectItem
+            img = {amazonClone}
+            url = "https://clone-bfd8a.web.app/"
+            description = "A mini copy of the e-commerce site Amazon. Currently adding the backend to this application."
+            technologies = "React.js, Google Firebase, Stripe, Express.js, Axios.js"
+            title = "Amazon Clone"
+          />
+           <ProjectItem
+            img = {redditThumbnail}
+            url = "https://glittering-fairy-46bf3d.netlify.app/"
+            description = "A mini copy of the community forum site Reddit."
+            technologies = "React.js, Redux.js"
+            title = "Reddit Clone"
+          />
+           <ProjectItem
+            img = {jammmingApp}
+            url = "https://sweet-malasada-1bb69a.netlify.app/"
+            description = "An application that lets you create a playlist on your Spotify Account."
+            technologies = "React.js"
+            title = "Jammming App"
           />
              
           </section>

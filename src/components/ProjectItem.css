@@ -18,7 +18,7 @@
 .actual-image{
     display:block; /* make sure to add this to image to remove the white space at the bottom of container*/
     width:100%;
-    height:auto;
+    height:300px;
     border-radius:10px;
 }
 
@@ -67,4 +67,7 @@
 }
 .project-button >h1{
     font-size:1rem;
+}
+.description-container{
+  padding:5px;
 }

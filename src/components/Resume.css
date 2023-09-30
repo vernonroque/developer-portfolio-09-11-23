@@ -1,5 +1,5 @@
 .resume-container{
-    width:100%;
+    max-width:100%;
     min-height:100vh;
     border:2px solid orange;
     background: #f0f0f0;
@@ -22,7 +22,7 @@
     top: 50%; /* Adjust this value to vertically center the inner title */
     left: 0;
     right: 0;
-    transform: translateY(-10%); /* Vertically center the inner title */
+    /*transform: translateY(-10%); /* Vertically center the inner title */
     z-index: 2;
 }
 .resume-inner-title > h2 {

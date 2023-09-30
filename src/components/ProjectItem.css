@@ -7,7 +7,7 @@
 
   .project-card{
     position:relative;
-    max-width:500px;
+    min-width:38rem;
     margin:1rem;
     height:auto;
     margin-bottom:10%;

@@ -5,7 +5,7 @@ import AboutMe from './components/AboutMe';
 import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import React, {useRef,useEffect} from 'react';
+import React, {useRef} from 'react';
 import resumePDF from './Vernon-Resume-08-08-23.pdf';
 
 function App() {

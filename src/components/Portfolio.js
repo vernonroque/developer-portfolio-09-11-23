@@ -26,8 +26,8 @@ function Portfolio({PortfolioRef}) {
           />
             <ProjectItem
             img = {amazonClone}
-            url = "https://clone-bfd8a.web.app/"
-            description = "A mini copy of the e-commerce site Amazon. Currently adding the backend to this application."
+            url = "https://clone-bfd8a.web.app/" 
+            description = "A mini copy of the e-commerce site Amazon. Fullstack application."
             technologies = "React.js, Google Firebase, Stripe, Express.js, Axios.js"
             title = "Amazon Clone"
           />

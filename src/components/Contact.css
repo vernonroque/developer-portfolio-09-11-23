@@ -4,12 +4,17 @@
     min-height:100vh;
     background: #f0f0f0;
 }
-
-/* .aboutMe-container{
-    width:100%;
-    background:#ffff;
+.contact-body{
+    max-width:100%;
     min-height:100vh;
-} */
+    display:grid;
+    grid-template-columns: 25% 75%;
+    grid-gap:2rem;
+    border:2px solid red;
+    padding:2rem;
+}
+
+
 .contact-title{
     padding:3rem;
     position:relative;
@@ -40,12 +45,47 @@
     text-decoration:underline;
     text-decoration-color:#c9a0dc;
 }
+.Contact-details{
+    width:100%;
+    min-height:100vh;
+    border:2px solid orchid;
+}
 .contactForm{
+    width:99%;
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content:flex-start;
     align-items:center;
+    border:2px solid green;
+}
+.info{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    width:93%;
+    border:2px solid blue;
+}
+.nameInput{
+    margin-right:10px;
+}
+.emailInput{
+    margin-left:10px;
+}
+input{
+    padding:.5rem 5.5rem .5rem .5rem;
+    width:100%;
+    
+    text-align:left;
 }
 textArea{
-    padding: 5rem 10rem;
+    width:90%;
+    margin-bottom:1rem;
+    padding:1rem 1rem 7rem 1rem;
+}
+.submitButton{
+    width:15%;
+    padding:1rem;
+    text-align:center;
 }

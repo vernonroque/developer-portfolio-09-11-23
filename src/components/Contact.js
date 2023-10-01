@@ -40,19 +40,28 @@ function Contact({ContactRef}) {
                <h2>Get In Touch</h2>
             </div>
           </div>
+        <section className = "contact-body">
+            <section className ="Contact-details">
+              <h1>Follow Me</h1>
+            </section>
+            
+            <form className ='contactForm' ref={form} onSubmit={sendEmail}>
+            <h1>Send Me A Note</h1>
+            <div className ="info">
+              {/* <label>Name</label> */}
+              <input className = "nameInput" type="text" name="user_name" placeholder ="Your Name" />
+              {/* <label>Email</label> */}
+              <input className = "emailInput" type="email" name="user_email" placeholder ="Your Email" />
+           </div>
+          {/* <label>Message</label> */}
+              <textarea className ="textArea" name="message" placeholder = "Contact Us!" />
+              <input className ="submitButton" type="submit" value="Send" />
+           </form>
 
-        <form className ='contactForm' ref={form} onSubmit={sendEmail}>
-          <div className ="info">
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-          </div>
-          <label>Message</label>
-          <textarea className ="textArea" name="message" />
-          <input type="submit" value="Send" />
-        </form>
+        </section>
+        
 
+       
       </section>
     
     </div>

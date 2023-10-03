@@ -1,6 +1,9 @@
 import React, {useRef} from 'react'
 import './Contact.css'
 import emailjs from '@emailjs/browser';
+import profilePic from '../photos/profile-pic.jpg';
+import {IoLogoWhatsapp} from 'react-icons/io';
+import {GrMail} from 'react-icons/gr';
 
 
 
@@ -60,6 +63,21 @@ function Contact({ContactRef}) {
         <section className = "contact-body">
             <section className ="Contact-details">
               <h1>Follow Me</h1>
+                <div className ='selfie-container'>
+                   <img className = 'profile-pic' src ={profilePic} alt ='selfie'/>
+                </div>
+                <div className ="contactInfo-container">
+                    <div className ='mail'>
+                        <GrMail className = 'mailIcon'/>
+                        <h3>vroque88@gmail.com</h3>
+                    </div>
+                    <div className="whatsApp">
+                      <IoLogoWhatsapp className ="whatsAppLogo"/>
+                      <h3>+1-818-531-8729</h3>
+                    </div>
+                </div>
+               
+              
             </section>
             
             <form className ='contactForm' ref={form} onSubmit={sendEmail}>
@@ -72,7 +90,10 @@ function Contact({ContactRef}) {
            </div>
           {/* <label>Message</label> */}
               <textarea className ="textArea" name="message" placeholder = "Contact Us!" required />
-              <input className ="submitButton" type="submit" value="Send" />
+              <div className = "submit-container">
+                <input className ="submitButton" type="submit" value="Send Message" />  
+              </div>
+              
            </form>
 
         </section>

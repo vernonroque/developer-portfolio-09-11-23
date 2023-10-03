@@ -1,6 +1,6 @@
 .portfolio-container{
     width:100%;
-    min-height:100vh;
+    height:auto;
     border:2px solid pink;
     display:flex;
     justify-content:center;
@@ -50,13 +50,12 @@
 @media only screen and (max-width:1300px){
   .portfolio-container{
     width:100%;
-    min-height:100vh;
+    height:auto;
     border:2px solid pink;
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction:column;
-    padding-bottom:10rem;
   }
 }
 

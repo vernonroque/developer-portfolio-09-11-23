@@ -1,19 +1,19 @@
 .contact-container{
     width:100%;
     border:2px solid yellow;
-    min-height:100vh;
-    background: #f0f0f0;
+    height:auto;
+    /* background: #f0f0f0; */
+    background:rgb(248,249,250);
 }
 .contact-body{
     max-width:100%;
-    min-height:100vh;
+    height:auto;
     display:grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 30% 70%;
     grid-gap:2rem;
     border:2px solid red;
     padding:2rem;
 }
-
 
 .contact-title{
     padding:3rem;
@@ -26,7 +26,8 @@
     font-family:'League Spartan',Arial, Helvetica, sans-serif;
     font-size:12rem;
     font-weight:bold;
-    color:#d1d1d1;
+    /* color:#d1d1d1; */
+    color:#dee3e4;
 }
 
 .contact-inner-title{
@@ -46,9 +47,15 @@
     text-decoration-color:#c9a0dc;
 }
 .Contact-details{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
     width:100%;
-    min-height:100vh;
     border:2px solid orchid;
+}
+.Contact-details >h1{
+    text-align:center;
 }
 .contactForm{
     width:99%;
@@ -65,7 +72,6 @@
     margin-top:2rem;
     margin-bottom:2rem;
     width:93%;
-    border:2px solid blue;
 }
 .nameInput{
     margin-right:10px;
@@ -76,16 +82,93 @@
 input{
     padding:.5rem 5.5rem .5rem .5rem;
     width:100%;
-    
     text-align:left;
+    border: 2px solid #D3D3D3;
+    border-radius:5px ;
+    font-family:'Apercu','Courier New', Courier, monospace;
+    font-size:1rem;
 }
 textArea{
     width:90%;
     margin-bottom:1rem;
     padding:1rem 1rem 7rem 1rem;
+    border: 2px solid #D3D3D3;
+    border-radius:5px ;
+    font-family:'Apercu','Courier New', Courier, monospace;
+    font-size:1rem;
+    overflow:auto;
+}
+.submit-container{
+    display:flex;
+    justify-content: center;
+
 }
 .submitButton{
-    width:15%;
-    padding:1rem;
+    max-width:100%;
     text-align:center;
+    background:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+    font-family:'Apercu','Courier New', Courier, monospace;
+    margin:1rem;
+    padding:1.25rem 1.875rem;
+    border-radius: 30px;
+    border:none;
+    font-weight:bold;
+    font-size:1rem;
+}
+.submitButton:hover{
+    cursor:pointer;
+    background:#c9a0dc;
+    transition-duration:.25s;
+}
+.selfie-container{
+    display:flex;
+    justify-content:center;
+    width:250px;
+    /* background:url('../photos/profile-pic.jpg'); */
+    /* background-size:cover; */
+    height:250px;
+    border-radius:100%;
+    /* background-position: 85%; */
+    margin-top:2rem;
+  
+}
+.profile-pic{
+    max-width:100%;
+    height:auto;
+    border-radius:100%;
+    object-fit: cover;
+    object-position: 87%;
+}
+.contactInfo-container{
+    display:flex;
+    justify-content:flex-start;
+    flex-direction:column;
+    align-items:space-around;
+    margin-top:2rem;
+}
+.mail{
+    display:flex;
+    align-items:center;
+}
+.mailIcon{
+    color:#c9a0dc;
+    font-size:1.5rem;
+    margin-right:.5rem;
+}
+.whatsApp{
+    display:flex;
+    align-items:center;
+}
+.whatsAppLogo{
+    color:#c9a0dc;
+    font-size:1.5rem;
+    margin-right:.5rem;
+}
+
+@media only screen and (max-width:1000px){
+    .selfie-container{
+        display:none;
+    }
 }

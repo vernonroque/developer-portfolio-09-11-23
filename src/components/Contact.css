@@ -14,6 +14,11 @@
     border:2px solid red;
     padding:2rem;
 }
+.Contact-details > h1{
+    font-family:'League Spartan',Arial, Helvetica, sans-serif;
+    text-align:center;
+    font-size:2rem;
+}
 
 .contact-title{
     padding:3rem;
@@ -54,9 +59,7 @@
     width:100%;
     border:2px solid orchid;
 }
-.Contact-details >h1{
-    text-align:center;
-}
+
 .contactForm{
     width:99%;
     display:flex;
@@ -152,6 +155,31 @@ textArea{
     display:flex;
     align-items:center;
 }
+.social-media-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    margin-top:2rem;
+    width:100%;
+
+}
+.social-media-section > h1{
+    font-family:'League Spartan',Arial, Helvetica, sans-serif;
+    font-size:2rem;
+}
+.contactForm > h1{
+    font-family:'League Spartan',Arial, Helvetica, sans-serif;
+    font-size:2rem;
+}
+.social-media-container{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    margin-top:1rem;
+
+}
 .mailIcon{
     color:#c9a0dc;
     font-size:1.5rem;
@@ -165,6 +193,16 @@ textArea{
     color:#c9a0dc;
     font-size:1.5rem;
     margin-right:.5rem;
+}
+.icon{
+    color:black;
+    font-size:3.5rem;
+
+}
+.icon:hover{
+    color:#c9a0dc;
+    cursor:pointer;
+    transition-duration:.25s;
 }
 
 @media only screen and (max-width:1000px){

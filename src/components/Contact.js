@@ -4,6 +4,8 @@ import emailjs from '@emailjs/browser';
 import profilePic from '../photos/profile-pic.jpg';
 import {IoLogoWhatsapp} from 'react-icons/io';
 import {GrMail} from 'react-icons/gr';
+import{AiFillLinkedin} from 'react-icons/ai';
+import {AiFillGithub} from 'react-icons/ai';
 
 
 
@@ -62,7 +64,7 @@ function Contact({ContactRef}) {
           </div>
         <section className = "contact-body">
             <section className ="Contact-details">
-              <h1>Follow Me</h1>
+              <h1>Contact Me</h1>
                 <div className ='selfie-container'>
                    <img className = 'profile-pic' src ={profilePic} alt ='selfie'/>
                 </div>
@@ -74,6 +76,19 @@ function Contact({ContactRef}) {
                     <div className="whatsApp">
                       <IoLogoWhatsapp className ="whatsAppLogo"/>
                       <h3>+1-818-531-8729</h3>
+                    </div>
+                    <div className ="social-media-section">
+                      <h1>Follow Me On:</h1>
+                      <div className ="social-media-container">
+                         <a href = "https://www.linkedin.com/in/vernon-roque-84724235/" target="_blank" rel="noreferrer">
+                             <AiFillLinkedin className = "icon"/>
+                        </a>
+                        <a href ="https://github.com/vernonroque" target="_blank" rel="noreferrer">
+                            <AiFillGithub className ="icon"/>
+                        </a>
+                         
+                      </div>
+                     
                     </div>
                 </div>
                
@@ -89,7 +104,7 @@ function Contact({ContactRef}) {
               <input className = "emailInput" id ="email" type="email" name="user_email" placeholder ="Your Email" required />
            </div>
           {/* <label>Message</label> */}
-              <textarea className ="textArea" name="message" placeholder = "Contact Us!" required />
+              <textarea className ="textArea" name="message" placeholder = "Write Me A Message!" required />
               <div className = "submit-container">
                 <input className ="submitButton" type="submit" value="Send Message" />  
               </div>

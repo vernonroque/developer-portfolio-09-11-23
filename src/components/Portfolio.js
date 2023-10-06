@@ -18,6 +18,7 @@ function Portfolio({PortfolioRef}) {
         </div>
         <section className ="projects-box">
           <ProjectItem
+            className="project"
             img = {movieDatabase}
             url = "https://6508ff2f1e691350ed2dda7a--curious-salamander-31c89a.netlify.app/"
             description = "An application that shows trending movies and popular movies currently. There is also a search feature"
@@ -25,6 +26,7 @@ function Portfolio({PortfolioRef}) {
             title = "Movie Database"
           />
             <ProjectItem
+            className="project"
             img = {amazonClone}
             url = "https://clone-bfd8a.web.app/" 
             description = "A mini copy of the e-commerce site Amazon. Fullstack application."
@@ -32,6 +34,7 @@ function Portfolio({PortfolioRef}) {
             title = "Amazon Clone"
           />
            <ProjectItem
+            className="project"
             img = {redditThumbnail}
             url = "https://glittering-fairy-46bf3d.netlify.app/"
             description = "A mini copy of the community forum site Reddit."
@@ -39,6 +42,7 @@ function Portfolio({PortfolioRef}) {
             title = "Reddit Clone"
           />
            <ProjectItem
+            className="project"
             img = {jammmingApp}
             url = "https://sweet-malasada-1bb69a.netlify.app/"
             description = "An application that lets you create a playlist on your Spotify Account."

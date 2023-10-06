@@ -25,6 +25,31 @@ function Header({scrollToHome,scrollToAboutMe,scrollToResume,scrollToPortfolio,s
       setHeader(false);
   }
 
+  function handleMobileHome(){
+    scrollToHome();
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
+
+  function handleMobileAboutMe(){
+    scrollToAboutMe();
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
+
+  function handleMobileResume(){
+    scrollToResume();
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  }
+
+  function handleMobilePortfolio(){
+    scrollToPortfolio();
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  }
+
+  function handleMobileContact(){
+    scrollToContact();
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  }
+
   window.addEventListener('scroll',changeBackground);
 
 
@@ -58,11 +83,11 @@ function Header({scrollToHome,scrollToAboutMe,scrollToResume,scrollToPortfolio,s
               <div className="mobile-menu">
                 {/* Add your mobile menu items here */}
                 <ul>
-                  <li onClick={scrollToHome}>Home</li>
-                  <li onClick={scrollToAboutMe}>About Me</li>
-                  <li onClick={scrollToResume}>Resume</li>
-                  <li onClick={scrollToPortfolio}>Portfolio</li>
-                  <li onClick={scrollToContact}>Contact</li>
+                  <li onClick={handleMobileHome}>Home</li>
+                  <li onClick={handleMobileAboutMe}>About Me</li>
+                  <li onClick={handleMobileResume}>Resume</li>
+                  <li onClick={handleMobilePortfolio}>Portfolio</li>
+                  <li onClick={handleMobileContact}>Contact</li>
                 </ul>
               </div>
                )}

@@ -86,19 +86,21 @@
   @media only screen and (max-width:838px){
     .header-container{
         justify-content:space-between;
-        border:2px solid green;
+        /* border:2px solid green; */
     }
     .header-container.active{
         justify-content:space-between;
-        border:2px solid green;
+        /* border:2px solid green; */
     }
     .header-container .mobile-menu {
         display: block;
     
       }
     .hamburger{
-      margin-top:15px;
       display:flex; 
+      margin-top:9px;
+      height:60px;
+      /* border:solid 2px red; */
     }
     .mobile-section{
         display:flex;
@@ -110,25 +112,40 @@
       }
       .mobile-menu{
         /* border:2px solid red; */
-        /* margin-bottom:-115px; */
-        margin-top:7px;
+        margin-top:10px;
         background-color:black;
-        margin-right:1px;
-        padding:10px;
+        /* margin-right:1px; */
+        width:15rem;
         background-color: rgba(0, 0, 0, 0.8);
       }
       .mobile-menu ul{
         color:white;
+        /* border:2px solid red; */
+        width:100%;
+        list-style:none;
+        padding:0;
+
+
       }
       .mobile-menu li{
         font-size:1.3rem;
-        /* text-indent:-40px; */
         font-family:'Apercu','Courier New', Courier, monospace;
-        text-align:left;
-        padding-right:30px;
+        text-align:center;
         font-weight:bold;
         line-height:1.6;
-        /* color: transparent;  */
+        width:100%;
+        position: relative;
+        padding-bottom: 5px;
+      }
+      .mobile-menu li::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px; /* Adjust the height to control the thickness of the underline */
+        background-color: rgba(231, 231, 231,0.2); /* Change this to your desired underline color */
+
       }
       .mobile-menu li:hover{
         cursor:pointer;

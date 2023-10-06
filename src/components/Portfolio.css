@@ -15,9 +15,12 @@
   align-items:space-evenly;
   max-width:100%;
   flex-wrap:wrap;
-  min-height:100vh;
+    height:auto;
 
 }
+/* .project{
+  overflow: hidden; /* Hide any content that overflows the dimensions */
+
 .portfolio-title{
   padding:3rem;
   position:relative;
@@ -27,7 +30,7 @@
 }
 .portfolio-title > h1{
   font-family:'League Spartan',Arial, Helvetica, sans-serif;
-  font-size:12rem;
+  font-size:15vw;
   font-weight:bold;
   color:#f0f0f0
 }
@@ -59,6 +62,29 @@
     flex-direction:column;
   }
 }
+
+@media only screen and (max-width:838px){
+  .portfolio-title > h1{
+      font-family:'League Spartan',Arial, Helvetica, sans-serif;
+      font-size:20vw;
+      font-weight:bold;
+      color:#f0f0f0;
+  }
+
+  .portfolio-inner-title > h2 {
+      font-family:'Apercu','Courier New', Courier, monospace;
+      font-size:3rem;
+      text-decoration:underline;
+      text-decoration-color:#c9a0dc;
+  }
+ 
+}
+
+/* @media screen and (max-width: 700px) {
+  .project {
+    flex-shrink: 2; /* Increase shrink factor for smaller screens */
+  
+
 
 
 

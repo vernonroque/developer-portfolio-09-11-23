@@ -26,3 +26,114 @@
 .linkedIn-logo{
     margin:20px;
 }
+
+.hamburger {
+    display: none; /* Initially hide the hamburger icon */
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+    margin-right:10px;
+    transition-duration:.2s;
+  }
+  
+  .hamburger.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    transition-duration: .2s;
+
+  }
+  
+  .hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-6.5px, -7.5px);
+    transition-duration:.2s;
+  }
+
+  .hamburger .bar:nth-child(1) {
+    transform: rotate(0deg);
+    transition-duration: .3s;
+
+  }
+  
+  .hamburger .bar:nth-child(2) {
+    opacity: 1;
+    transition-duration: .3s;
+  }
+  
+  .hamburger .bar:nth-child(3) {
+    transform: rotate(0deg);
+    transition-duration:.3s;
+  }
+  .cross{
+    color:white;
+    border:2px solid pink;
+    font-size:1.5rem;
+  }
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+  }
+
+.mobile-section{
+    display:none;
+}
+
+
+  @media only screen and (max-width:838px){
+    .header-container{
+        justify-content:space-between;
+        border:2px solid green;
+    }
+    .header-container.active{
+        justify-content:space-between;
+        border:2px solid green;
+    }
+    .header-container .mobile-menu {
+        display: block;
+    
+      }
+    .hamburger{
+      margin-top:15px;
+      display:flex; 
+    }
+    .mobile-section{
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:flex-end;
+        /* border:2px solid pink; */
+        max-height:60px;
+      }
+      .mobile-menu{
+        /* border:2px solid red; */
+        /* margin-bottom:-115px; */
+        margin-top:7px;
+        background-color:black;
+        margin-right:1px;
+        padding:10px;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .mobile-menu ul{
+        color:white;
+      }
+      .mobile-menu li{
+        font-size:1.3rem;
+        /* text-indent:-40px; */
+        font-family:'Apercu','Courier New', Courier, monospace;
+        text-align:left;
+        padding-right:30px;
+        font-weight:bold;
+        line-height:1.6;
+        /* color: transparent;  */
+      }
+      .mobile-menu li:hover{
+        cursor:pointer;
+        color:#c9a0dc;
+        transition-duration:.3s;
+
+      }
+}

@@ -11,26 +11,27 @@
 
 .projects-box{
   display:flex;
-  justify-content:center;
+  justify-content:space-evenly;
+  align-items:space-evenly;
   max-width:100%;
   flex-wrap:wrap;
   min-height:100vh;
 
 }
-.aboutMe-title{
+.portfolio-title{
   padding:3rem;
   position:relative;
   margin: 0 auto; 
   text-align: center;
   z-index:1;
 }
-.aboutMe-title > h1{
+.portfolio-title > h1{
   font-family:'League Spartan',Arial, Helvetica, sans-serif;
   font-size:12rem;
   font-weight:bold;
   color:#f0f0f0
 }
-.aboutMe-inner-title{
+.portfolio-inner-title{
   position: absolute;
   top: 50%; /* Adjust this value to vertically center the inner title */
   left: 0;
@@ -40,7 +41,7 @@
  
 }
 
-.aboutMe-inner-title > h2 {
+.portfolio-inner-title > h2 {
   font-family:'Apercu','Courier New', Courier, monospace;
   font-size:3rem;
   text-decoration:underline;

@@ -4,11 +4,17 @@ import NavLinks from './NavLinks';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMugHot } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {ImCross} from 'react-icons/im';
 
 
 function Header({scrollToHome,scrollToAboutMe,scrollToResume,scrollToPortfolio,scrollToContact}) {
 
   const [header,setHeader] = useState(false);
+  const [isMobileMenuOpen,setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   function changeBackground(){
     if(window.scrollY >= 60){
@@ -24,6 +30,7 @@ function Header({scrollToHome,scrollToAboutMe,scrollToResume,scrollToPortfolio,s
 
 
 
+
   return (
     <>
     <section className = {header ? 'header-container active': 'header-container'}>
@@ -35,7 +42,37 @@ function Header({scrollToHome,scrollToAboutMe,scrollToResume,scrollToPortfolio,s
         scrollToPortfolio = {scrollToPortfolio}
         scrollToContact = {scrollToContact}
         />
-        <a href ='https://www.linkedin.com/in/vernon-roque-84724235/' target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} className=' logo-img fa-3x linkedIn-logo' style={{color:'dodgerblue'}} /></a>
+        
+      <section className ='mobile-section'>
+          {/* Hamburger icon */}
+            <div className={`hamburger${isMobileMenuOpen ? ' open' : ''}`} onClick={toggleMobileMenu}>
+              
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+             
+              {/* {isMobileMenuOpen && (<ImCross className ='cross'/>)} */}
+            </div>
+
+            {isMobileMenuOpen && ( 
+              <div className="mobile-menu">
+                {/* Add your mobile menu items here */}
+                <ul>
+                  <li onClick={scrollToHome}>Home</li>
+                  <li onClick={scrollToAboutMe}>About Me</li>
+                  <li onClick={scrollToResume}>Resume</li>
+                  <li onClick={scrollToPortfolio}>Portfolio</li>
+                  <li onClick={scrollToContact}>Contact</li>
+                </ul>
+              </div>
+               )}
+        </section>
+    
+
+      {/* <a href ='https://www.linkedin.com/in/vernon-roque-84724235/' target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} className=' logo-img fa-3x linkedIn-logo' style={{color:'dodgerblue'}} /></a> */}
+
+     
+    
     </section>
     </>
     

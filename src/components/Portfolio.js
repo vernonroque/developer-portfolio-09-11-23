@@ -10,9 +10,9 @@ function Portfolio({PortfolioRef}) {
   return (
     <div ref = {PortfolioRef}>
       <section className = 'portfolio-container'>
-        <div className = "aboutMe-title">
+        <div className = "portfolio-title">
           <h1>Portfolio</h1>
-          <div className = "aboutMe-inner-title">
+          <div className = "portfolio-inner-title">
             <h2>My Work</h2>
           </div>
         </div>

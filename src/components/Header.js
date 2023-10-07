@@ -3,8 +3,8 @@ import './Header.css';
 import NavLinks from './NavLinks';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMugHot } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import {ImCross} from 'react-icons/im';
+// import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+// import {ImCross} from 'react-icons/im';
 
 
 function Header({scrollToHome,scrollToAboutMe,scrollToResume,scrollToPortfolio,scrollToContact}) {
@@ -18,7 +18,7 @@ function Header({scrollToHome,scrollToAboutMe,scrollToResume,scrollToPortfolio,s
 
   function changeBackground(){
     if(window.scrollY >= 60){
-      console.log(window.scrollY);
+      // console.log(window.scrollY);
       setHeader(true);
     }
     else

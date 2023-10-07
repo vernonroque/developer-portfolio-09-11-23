@@ -236,5 +236,11 @@ textArea{
         text-decoration:underline;
         text-decoration-color:#c9a0dc;
     }
+}
+
+@media only screen and (max-width:400px){
    
+    .contact-inner-title > h2 {
+        font-size:1.5rem;
+    }
 }

@@ -1,6 +1,6 @@
 .resume-container{
     max-width:100%;
-    min-height:100vh;
+    height:auto;
     border:2px solid orange;
     /* background: #f0f0f0; */
     background:rgb(248,249,250)
@@ -70,7 +70,23 @@
         text-decoration:underline;
         text-decoration-color:#c9a0dc;
     }
+    .resume-body{
+        flex-direction:column;
+    }
+    .education{
+        width:100%;
+
+    }
+    .experience{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width:400px){
    
+    .resume-inner-title > h2 {
+        font-size:1.5rem;
+    }
 }
 
 

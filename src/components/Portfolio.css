@@ -62,28 +62,20 @@
     flex-direction:column;
   }
 }
-
 @media only screen and (max-width:838px){
   .portfolio-title > h1{
-      font-family:'League Spartan',Arial, Helvetica, sans-serif;
       font-size:20vw;
-      font-weight:bold;
-      color:#f0f0f0;
   }
-
   .portfolio-inner-title > h2 {
-      font-family:'Apercu','Courier New', Courier, monospace;
       font-size:3rem;
-      text-decoration:underline;
-      text-decoration-color:#c9a0dc;
   }
- 
 }
-
-/* @media screen and (max-width: 700px) {
-  .project {
-    flex-shrink: 2; /* Increase shrink factor for smaller screens */
+@media only screen and (max-width:400px){
   
+  .portfolio-inner-title > h2 {
+      font-size:1.5rem;
+  }
+}
 
 
 

@@ -21,7 +21,8 @@
     width:100%; /* always use width:100% for dimensions of images */
     height:100%; /* always use height:100% for dimensions of images */
     border-radius:10px;
-    /* object-fit:cover; */
+    object-fit:cover;
+    object-position:center center;
 }
 
 .img-overlay{
@@ -83,7 +84,7 @@
     margin-bottom:10%;
     box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
     border-radius:10px;
-    height:200px;
+    height:300px;
   }
 
   .actual-image{
@@ -91,7 +92,8 @@
     width:100%; /* always use width:100% for dimensions of images */
     height:100%; /* always use height:100% for dimensions of images */
     border-radius:10px;
-    /* object-fit:cover; */
+    object-fit:cover;
+    object-position:center center;
 }
 
 .img-overlay{
@@ -109,12 +111,27 @@
     justify-content:center;
     align-items:center;
     flex-direction:column;
-    overflow:scroll;
-}
+    /* overflow:scroll; */
+} 
 .img-overlay-blur{
     backdrop-filter: blur(5px);
   }
   .description-container{
     padding:0;
+  }
+}
+
+@media only screen and (max-width:500px){
+  .project-card {
+   
+    width:400px;
+    height:600px;
+  }
+}
+@media only screen and (max-width:400px){
+  .project-card {
+   
+    width:300px;
+    height:500px;
   }
 }

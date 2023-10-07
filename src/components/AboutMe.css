@@ -1,7 +1,7 @@
 .aboutMe-container{
     width:100%;
     background:#ffff;
-    min-height:100vh;
+    height:auto;
 }
 .aboutMe-title{
     padding:3rem;
@@ -43,6 +43,7 @@
 .quick-facts{
     list-style-type:none;
     margin: 0 2rem;
+    padding:0;
 } 
 
 .list-item{
@@ -90,22 +91,39 @@ button:hover{
     .aboutMe-body{
         display:flex;
         flex-direction:column;
+        padding:10px;
     }
 }
 
 @media only screen and (max-width:840px){
     .aboutMe-title > h1{
-        font-family:'League Spartan',Arial, Helvetica, sans-serif;
         font-size:20vw;
-        font-weight:bold;
-        color:#f0f0f0;
     }
 
     .aboutMe-inner-title > h2 {
-        font-family:'Apercu','Courier New', Courier, monospace;
         font-size:3rem;
-        text-decoration:underline;
-        text-decoration-color:#c9a0dc;
     }
+   
+}
+@media only screen and (max-width:570px){
+    .aboutMe-inner-title{
+        position: absolute;
+        top: 50%; /* Adjust this value to vertically center the inner title */
+        left: 0;
+        right: 0;
+       transform: translateY(-50%); /* Vertically center the inner title */
+        z-index: 2;
+       
+    }
+}
+@media only screen and (max-width:400px){
+    
+    .aboutMe-inner-title > h2 {
+        font-size:1.5rem;
+    }
+    .aboutMe-body{
+        padding:0;
+    }
+
    
 }

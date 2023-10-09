@@ -1,6 +1,6 @@
 .contact-container{
     width:100%;
-    border:2px solid yellow;
+    /* border:2px solid yellow; */
     height:auto;
     /* background: #f0f0f0; */
     background:rgb(248,249,250);
@@ -11,7 +11,7 @@
     display:grid;
     grid-template-columns: 30% 70%;
     grid-gap:2rem;
-    border:2px solid red;
+    /* border:2px solid red; */
     padding:2rem;
 }
 .Contact-details > h1{
@@ -57,16 +57,17 @@
     justify-content:flex-start;
     align-items:center;
     width:100%;
-    border:2px solid orchid;
+    /* border:2px solid orchid; */
 }
 
 .contactForm{
-    width:99%;
+    max-width:100%;
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
     align-items:center;
-    border:2px solid green;
+    margin:0 20px;
+    /* border:2px solid green; */
 }
 .info{
     display:flex;
@@ -74,32 +75,35 @@
     align-items:center;
     margin-top:2rem;
     margin-bottom:2rem;
-    width:93%;
+    width:100%;
 }
 .nameInput{
     margin-right:10px;
+    
 }
 .emailInput{
-    margin-left:10px;
+    margin-left:10px; width:100%;
 }
 input{
-    padding:.5rem 5.5rem .5rem .5rem;
+    padding:.5rem 5.5rem .5rem 0;
     width:100%;
     text-align:left;
     border: 2px solid #D3D3D3;
     border-radius:5px ;
     font-family:'Apercu','Courier New', Courier, monospace;
     font-size:1rem;
+    text-indent:10px;
 }
 textArea{
-    width:90%;
+    width:99.5%;
     margin-bottom:1rem;
-    padding:1rem 1rem 7rem 1rem;
+    padding:1rem 0 7rem 0;
     border: 2px solid #D3D3D3;
     border-radius:5px ;
     font-family:'Apercu','Courier New', Courier, monospace;
     font-size:1rem;
     overflow:auto;
+    text-indent:10px;
 }
 .submit-container{
     display:flex;
@@ -209,6 +213,16 @@ textArea{
     /* .selfie-container{
         display:none;
     } */
+    .contactForm{  
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:center;
+        margin:0 20px;
+        /* border:2px solid green; */
+
+    }
 
     .contact-body{
         max-width:100%;
@@ -217,7 +231,7 @@ textArea{
         justify-content:center;
         flex-direction:column;
         align-items:center;
-        border:2px solid red;
+        /* border:2px solid red; */
         padding:2rem;
     }
 }
@@ -236,6 +250,33 @@ textArea{
         text-decoration:underline;
         text-decoration-color:#c9a0dc;
     }
+}
+
+@media only screen and (max-width:600px){
+    .info{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        align-items:center;
+        margin-top:2rem;
+        margin-bottom:0;
+        width:100%;
+    }
+    .nameInput{
+        margin-right:0;
+        margin-bottom:2rem;
+    }
+    .emailInput{
+        margin-left:0;
+        margin-bottom:2rem;
+    }
+    input{
+        padding:.5rem 0 .5rem 0;
+    }
+    textArea{
+        width:100%;
+    }
+
 }
 
 @media only screen and (max-width:400px){

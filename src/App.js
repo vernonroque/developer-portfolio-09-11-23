@@ -10,14 +10,15 @@ import resumePDF from './Vernon-Resume-08-08-23.pdf';
 
 function App() {
   //initializing variables with useRef hook
-  const HomeRef = useRef(null);
-  const AboutMeRef = useRef(null);
-  const ResumeRef = useRef(null);
-  const PortfolioRef = useRef(null);
-  const ContactRef = useRef(null);
-
+const HomeRef = useRef(null);
+const AboutMeRef = useRef(null);
+const ResumeRef = useRef(null);
+const PortfolioRef = useRef(null);
+const ContactRef = useRef(null);
+  
   // Have to use the functions below to reference the location of each section. When the click action happens
   //the functions get called
+
   const scrollToHome = () => {
     return HomeRef.current.scrollIntoView({ behavior: 'smooth' });
   };
@@ -33,7 +34,8 @@ function App() {
   const scrollToContact = () => {
     return ContactRef.current.scrollIntoView({ behavior: 'smooth' });
   };
-
+  
+ 
   // useEffect(()=>{
   //   console.log('Home', HomeRef.current);
   //   console.log(AboutMeRef.current);

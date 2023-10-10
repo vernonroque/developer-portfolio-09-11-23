@@ -6,9 +6,11 @@
     background:white;
     border-radius:5px;
     margin:10px;
-    line-height:2rem;
-    padding:10px;
+    line-height:1.8rem;
+    padding:25px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    flex-wrap:wrap;
+    width:100%;
 }
 .experienceCard >p{
     margin-top:1rem;

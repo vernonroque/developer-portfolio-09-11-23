@@ -1,13 +1,13 @@
 import React from 'react'
 import './ExperienceCard.css';
 
-function ExperienceCard() {
+function ExperienceCard({year,occupation,company,description}) {
   return (
     <div className="experienceCard">
-        <h4 className="year-tab">2008-2011</h4>
-        <h2 className="degree-title">Bachelors Degree</h2>
-        <h3 className="univeristy">University of Southern California</h3>
-        <p className="description">Description goes here</p>
+        <h4 className="year-tab">{year}</h4>
+        <h2 className="degree-title">{occupation}</h2>
+        <h3 className="univeristy">{company}</h3>
+        <p className="description">{description}</p>
     </div>
         
   )

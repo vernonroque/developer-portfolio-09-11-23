@@ -6,15 +6,34 @@
     background:white;
     border-radius:5px;
     margin:10px;
-    line-height:2rem;
-    padding:10px;
+    line-height:1.8rem;
+    padding:25px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    flex-wrap:wrap;
+    width:100%;
+    height:auto;
 }
 .educationCard >p{
     margin-top:1rem;
+    line-height:1.8rem;
+    font-family:'Apercu','Courier New', Courier, monospace;
+    text-align:left;
 }
 .year-tab{
     background:#c9a0dc;
     padding:3px;
     border-radius:5px;
+    font-family:'Apercu','Courier New', Courier, monospace;
 }
+.degree-title{
+    font-family:'League Spartan',Arial, Helvetica, sans-serif;
+    font-weight:900;
+    margin-top:1rem;
+    text-align:left;
+}
+.university{
+    font-family:'League Spartan',Arial, Helvetica, sans-serif;
+    text-align:left;
+    /* font-weight:bold; */
+}
+

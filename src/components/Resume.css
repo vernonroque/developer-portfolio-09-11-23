@@ -1,5 +1,5 @@
 .resume-container{
-    max-width:100%;
+    width:100%;
     height:auto;
     border:2px solid orange;
     /* background: #f0f0f0; */
@@ -36,14 +36,25 @@
 .resume-body{
     display:flex;
     justify-content:space-around;
+    flex-direction:column;
+    width:100%;
+    border:2px solid dodgerblue;
+    height:auto;
 }
 .education{
+    display:flex;
+    justify-content:center;
     border: 2px solid yellowgreen;
-    width:50%;
+    width:100%;
+    height:auto;
 }
+
 .experience{
+    display:flex;
+    justify-content:center;
     border: 2px solid salmon;
-    width:50%;
+    width:100%;
+    height:auto;
 }
 
 .skills{
@@ -70,15 +81,20 @@
         text-decoration:underline;
         text-decoration-color:#c9a0dc;
     }
-    .resume-body{
+    /* .resume-body{
         flex-direction:column;
-    }
+    } */
+}
+@media only screen and (max-width:766px){
     .education{
-        width:100%;
-
+        display:flex;
+        justify-content:flex-start;
+        flex-wrap:wrap;
     }
     .experience{
-        width:100%;
+        display:flex;
+        justify-content:flex-start;
+        flex-wrap:wrap;
     }
 }
 

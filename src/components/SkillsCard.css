@@ -1,6 +1,6 @@
 .skillsCard{
     display:flex;
-    justify-content:space-around;
+    justify-content:center;
     align-items:center;
     max-width:100%;
     background:white;
@@ -19,7 +19,7 @@
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
-    margin:10px;
+    margin:15px;
 }
 .skillItem > h3 {
     font-family:'Apercu','Courier New', Courier, monospace;

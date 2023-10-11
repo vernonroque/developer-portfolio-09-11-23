@@ -25,27 +25,25 @@ function Resume({ResumeRef,downloadResume}) {
             </div>
           </div>
           <section className="resume-body">
-          <h1>The education container</h1>
+         
             <div className="education">
+            <h1>Education</h1>
                 <EducationCard
-                  className = "educationBundle"
                   year = "2021-present"
                   degree = "Fullstack Engineering Course"
                   university = "Codecademy Career Path"
-                  description = "Studying front-end technologies such as html, css, and javascript as well as frameworks react/redux. Studying back-end technologies such as node.js, express.js, sql, and posgresql."
-                
+                  description = "Studying front-end technologies such as html, css, and javascript as well as frameworks react/redux. Studying back-end technologies such as node.js, express.js, and posgresql. Have built several different projects regarding these technologies."
                 />
                 <EducationCard 
-                  className = "educationBundle"
                     year = "2008-2011" 
                     degree = "Bachelors Degree in Electrical Engineering"
                     university = "University of Southern California"
-                    description = " Emphasis on circuit design and analysis. Used technologies such as Matlab, Verilog/VHDL, SPICE, and C++."
+                    description = "Emphasis on VLSI and analog circuit design and analysis. Used technologies such as Matlab, Verilog/VHDL, SPICE, and C++."
                 />
-              
             </div>
-            <h1>The experience container</h1>
+           
             <div className = "experience">
+            <h1>Notable Work Experience</h1>
               <ExperienceCard
               year = "2022-present"
               occupation = "Math Teacher"
@@ -53,10 +51,29 @@ function Resume({ResumeRef,downloadResume}) {
               description = "I am currently a math teacher teaching 2nd grade, 3rd grade, and 4th grade math"
                />
               <ExperienceCard 
-               year = "2022-present"
-               occupation = "Math Teacher"
-               company = "Lexington Singapore School"
-               description = "I am currently a math teacher teaching 2nd grade, 3rd grade, and 4th grade math"/>
+               year = "2018-2022"
+               occupation = "Enlgish as a Second Language (ESL) Teacher"
+               company = "VIPKid"
+               description = "I teach students remotely. Lessons cover different exercises ranging from reading, vocabulary, grammar, pronunciation, and listening."
+               />
+               <ExperienceCard 
+               year = "2012-2015"
+               occupation = "Systems Installation Engineer"
+               company = "Panasonic Avionics Corporation"
+               description = "Designed and developed Global Communication Systems and In-Flight Entertainment Systems interconnects to ensure proper interfacing with existing aircraft equipment for international airlines such as Etihad Airways and China Southern Airlines.Prepared engineering schematics with AutoCAD."
+               />
+                <ExperienceCard 
+               year = "Jun 2011 - Nov 2011"
+               occupation = "Product Realization Intern at T-Mobile USA"
+               company = "T-Mobile Inc"
+               description = "Tested Wi-Fi calling and collaborated with the engineering team to resolve any issues. Developed a basic understanding of wireless GSM/GPRS, handset client, content, and mobile web."
+               />
+                  <ExperienceCard 
+               year = "2017 - Present"
+               occupation = "Jazz Musician"
+               company = "Self-Employed"
+               description = "Played jazz saxophone while traveling through South America. Currently building a music channel on youtube"
+               />
             </div>
 
           </section>

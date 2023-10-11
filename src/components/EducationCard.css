@@ -7,17 +7,19 @@
     border-radius:5px;
     margin:10px;
     line-height:1.8rem;
-    padding:25px;
+    padding:25px;  /*for some reason the padding makes the card exceed the width of its parent container when i use flex-direction:column */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    flex-wrap:wrap;
-    width:100%;
+    width:80%;
     height:auto;
+    box-sizing:border-box;
 }
+
 .educationCard >p{
     margin-top:1rem;
     line-height:1.8rem;
     font-family:'Apercu','Courier New', Courier, monospace;
     text-align:left;
+    
 }
 .year-tab{
     background:#c9a0dc;
@@ -34,6 +36,10 @@
 .university{
     font-family:'League Spartan',Arial, Helvetica, sans-serif;
     text-align:left;
-    /* font-weight:bold; */
 }
 
+@media only screen and (max-width:600px){
+    .educationCard{
+        height:auto;
+    }
+}

@@ -79,10 +79,12 @@
 }
 .nameInput{
     margin-right:10px;
+    text-indent:10px;
     
 }
 .emailInput{
     margin-left:10px; width:100%;
+    text-indent:10px;
 }
 input{
     padding:.5rem 5.5rem .5rem 0;
@@ -92,10 +94,10 @@ input{
     border-radius:5px ;
     font-family:'Apercu','Courier New', Courier, monospace;
     font-size:1rem;
-    text-indent:10px;
+    
 }
 textArea{
-    width:99.5%;
+    width:100%;
     margin-bottom:1rem;
     padding:1rem 0 7rem 0;
     border: 2px solid #D3D3D3;
@@ -139,6 +141,7 @@ textArea{
     border-radius:100%;
     /* background-position: 85%; */
     margin-top:2rem;
+    border:5px solid #c9a0dc;
   
 }
 .profile-pic{

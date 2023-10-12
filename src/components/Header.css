@@ -21,7 +21,10 @@
     position:fixed;
 }
 .coffee-mug{
-    margin:20px;
+    margin:25px;
+    padding:10px;
+    padding-bottom:20px;
+   
 }
 .linkedIn-logo{
     margin:20px;

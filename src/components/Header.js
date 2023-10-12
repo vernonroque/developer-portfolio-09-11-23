@@ -59,7 +59,7 @@ function Header({scrollToHome,scrollToAboutMe,scrollToResume,scrollToPortfolio,s
   return (
     <>
     <section className = {header ? 'header-container active': 'header-container'}>
-    <FontAwesomeIcon icon= {faMugHot} className=' logo-img fa-3x coffee-mug' style ={{color:'white'}}/> 
+    <FontAwesomeIcon icon= {faMugHot} className=' logo-img fa-2x coffee-mug' style ={{color:'white'}}/> 
         <NavLinks 
         scrollToHome = {scrollToHome}
         scrollToAboutMe={scrollToAboutMe}

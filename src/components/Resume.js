@@ -12,9 +12,6 @@ function Resume({ResumeRef,downloadResume}) {
     return downloadResume();
   }
 
-
-
-
   return (
     <div ref = {ResumeRef}>
         <section className = "resume-container">

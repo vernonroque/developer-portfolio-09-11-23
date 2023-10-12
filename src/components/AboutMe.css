@@ -59,9 +59,22 @@
     font-family:'League Spartan',Arial, Helvetica, sans-serif;
     font-size:3rem;
     margin:1.5rem;
+    line-height:1.2;
 }
 .paragraph > p{
     font-family:'Apercu','Courier New', Courier, monospace;
+    font-size:1.2rem;
+    line-height:1.6;
+    text-align:left;
+    padding:20px;
+}
+.quote{
+    text-align:center;
+    font-weight:bold;
+    display: block;
+    margin: 0 auto;
+    font-style:italic;
+    font-size:2rem;
 }
 .name{
     color:#c9a0dc;

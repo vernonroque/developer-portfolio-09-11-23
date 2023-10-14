@@ -68,6 +68,21 @@
     text-align:left;
     padding:20px;
 }
+.paragraph a{
+    text-decoration:none;
+    color:black;
+    vertical-align:middle;
+    margin:3px;
+    /* transition-duration:.2s; */ 
+}
+.paragraph a:hover{
+    background-color:#c9a0dc;
+    color:white;
+    border-radius:5px;
+    padding-right:3px;
+    transition-duration:.2s;
+
+}
 .quote{
     text-align:center;
     font-weight:bold;

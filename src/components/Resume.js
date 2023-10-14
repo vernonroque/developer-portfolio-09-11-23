@@ -45,13 +45,19 @@ function Resume({ResumeRef,downloadResume}) {
               year = "2022-present"
               occupation = "Math Teacher"
               company = "Lexington Singapore School"
-              description = "I am currently a math teacher teaching 2nd grade, 3rd grade, and 4th grade math"
+              description = "I am currently a math teacher teaching 1st grade, 2nd grade, 3rd grade, and 4th grade math"
                />
               <ExperienceCard 
                year = "2018-2022"
                occupation = "Enlgish as a Second Language (ESL) Teacher"
                company = "VIPKid"
                description = "I teach students remotely. Lessons cover different exercises ranging from reading, vocabulary, grammar, pronunciation, and listening."
+               />
+                <ExperienceCard 
+               year = "2017 - Present"
+               occupation = "Jazz Musician"
+               company = "Self-Employed"
+               description = "Played jazz saxophone while traveling through South America. I play the tenor saxophone. I also enjoy playing the blues, bossa nova, and cumbia."
                />
                <ExperienceCard 
                year = "2012-2015"
@@ -65,12 +71,7 @@ function Resume({ResumeRef,downloadResume}) {
                company = "T-Mobile Inc"
                description = "Tested Wi-Fi calling and collaborated with the engineering team to resolve any issues. Developed a basic understanding of wireless GSM/GPRS, handset client, content, and mobile web."
                />
-                  <ExperienceCard 
-               year = "2017 - Present"
-               occupation = "Jazz Musician"
-               company = "Self-Employed"
-               description = "Played jazz saxophone while traveling through South America. Currently building a music channel on youtube"
-               />
+              
             </div>
 
           </section>

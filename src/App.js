@@ -7,6 +7,8 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import React, {useRef} from 'react';
 import resumePDF from './Vernon-Resume-08-08-23.pdf';
+import {Parallax, ParallaxLayer} from '@react-spring/parallax';
+import resumePDFNew from './Vernon-Web-Developer-Resume-10-14-23.pdf';
 
 function App() {
   //initializing variables with useRef hook
@@ -45,8 +47,8 @@ const ContactRef = useRef(null);
 
   const downloadResume = () => {
     const link = document.createElement('a');
-    link.href = resumePDF;
-    link.download = './Vernon-Resume-08-08-23.pdf'; // Specify the desired file name
+    link.href = resumePDFNew;
+    link.download = './Vernon-Web-Developer-Resume-10-14-23.pdf'; // Specify the desired file name
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -54,18 +56,18 @@ const ContactRef = useRef(null);
   
   return (
     <div className="App">
-      <Header
-       scrollToHome = {scrollToHome}
-       scrollToAboutMe = {scrollToAboutMe}
-       scrollToResume = {scrollToResume}
-       scrollToPortfolio = {scrollToPortfolio}
-       scrollToContact = {scrollToContact}
-       />
-      <Home HomeRef = {HomeRef}/>
-      <AboutMe AboutMeRef={AboutMeRef} downloadResume = {downloadResume}/>
-      <Resume ResumeRef={ResumeRef} downloadResume={downloadResume}/>
-      <Portfolio PortfolioRef = {PortfolioRef}/>
-      <Contact ContactRef = {ContactRef}/>
+            <Header
+            scrollToHome = {scrollToHome}
+            scrollToAboutMe = {scrollToAboutMe}
+            scrollToResume = {scrollToResume}
+            scrollToPortfolio = {scrollToPortfolio}
+            scrollToContact = {scrollToContact}
+            />
+            <Home HomeRef = {HomeRef}/>
+            <AboutMe AboutMeRef={AboutMeRef} downloadResume = {downloadResume}/>
+            <Resume ResumeRef={ResumeRef} downloadResume={downloadResume}/>
+            <Portfolio PortfolioRef = {PortfolioRef}/>
+            <Contact ContactRef = {ContactRef}/>
     </div>
   );
 }

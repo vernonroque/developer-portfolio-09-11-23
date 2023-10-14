@@ -21,7 +21,7 @@ function Home({HomeRef}) {
               /> */}
                <TypeAnimation
                   sequence={[
-                    "I'm an aspiring frontend developer",
+                    "I'm an Aspiring Front-End Developer",
                     2000,
                     "I'm a Jazz Musician",
                     2000,

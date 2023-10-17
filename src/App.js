@@ -17,6 +17,7 @@ const AboutMeRef = useRef(null);
 const ResumeRef = useRef(null);
 const PortfolioRef = useRef(null);
 const ContactRef = useRef(null);
+const WrapperRef = useRef(null);
   
   // Have to use the functions below to reference the location of each section. When the click action happens
   //the functions get called
@@ -56,18 +57,35 @@ const ContactRef = useRef(null);
   
   return (
     <div className="App">
-            <Header
+       <div className="wrapper" ref={WrapperRef}>
+          <Header
+            className="nav-heading"
             scrollToHome = {scrollToHome}
             scrollToAboutMe = {scrollToAboutMe}
             scrollToResume = {scrollToResume}
             scrollToPortfolio = {scrollToPortfolio}
             scrollToContact = {scrollToContact}
-            />
-            <Home HomeRef = {HomeRef}/>
-            <AboutMe AboutMeRef={AboutMeRef} downloadResume = {downloadResume}/>
-            <Resume ResumeRef={ResumeRef} downloadResume={downloadResume}/>
-            <Portfolio PortfolioRef = {PortfolioRef}/>
-            <Contact ContactRef = {ContactRef}/>
+            WrapperRef= {WrapperRef}
+           
+          />
+          
+              <div className="main-sections">
+                    <div className="background" >
+                    <Home  HomeRef={HomeRef}/>
+                    </div>
+              
+        
+                    <div className ="foreground">
+                    <AboutMe AboutMeRef={AboutMeRef} downloadResume = {downloadResume}/>
+                    <Resume ResumeRef={ResumeRef} downloadResume={downloadResume}/>
+                    <Portfolio PortfolioRef = {PortfolioRef}/>
+                    <Contact ContactRef = {ContactRef}/>
+                    </div>
+                  </div>
+          </div>
+              
+              
+        
     </div>
   );
 }

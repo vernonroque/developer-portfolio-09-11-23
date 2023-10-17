@@ -5,9 +5,11 @@
     flex-direction: row;
     width:100%;
     height:60px;
-    background-color:transparent;
-    position:fixed;
-    z-index:10;
+    background: transparent;
+    position:sticky;
+    z-index:100;
+    top: 0;
+    transition: all .5s ease-in-out;
 }
 
 .header-container.active{
@@ -18,7 +20,10 @@
     width:100%;
     height:60px;
     background:linear-gradient(to right,#434343,#000);
-    position:fixed;
+    position:sticky;
+    z-index:100;
+    top:0;
+    transition: all .5s ease-in-out;
 }
 .coffee-mug{
     margin:25px;

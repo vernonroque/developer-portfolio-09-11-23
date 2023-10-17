@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect,useRef} from 'react'
 import './Header.css';
 import NavLinks from './NavLinks';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,26 +7,25 @@ import { faMugHot } from '@fortawesome/free-solid-svg-icons';
 // import {ImCross} from 'react-icons/im';
 
 
-function Header({scrollToHome,scrollToAboutMe,scrollToResume,scrollToPortfolio,scrollToContact}) {
+function Header({scrollToHome,scrollToAboutMe,scrollToResume,scrollToPortfolio,scrollToContact,WrapperRef}) {
 
   const [header,setHeader] = useState(false);
   const [isMobileMenuOpen,setIsMobileMenuOpen] = useState(false);
+  //const scrollContainerRef = useRef();
+
+  const scrollToTopOfContainer = () => {
+    if (WrapperRef.current) {
+      WrapperRef.current.scrollTop = 0;
+    }
+  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  function changeBackground(){
-    if(window.scrollY >= 60){
-      // console.log(window.scrollY);
-      setHeader(true);
-    }
-    else
-      setHeader(false);
-  }
-
+ 
   function handleMobileHome(){
-    scrollToHome();
+    scrollToTopOfContainer();
     setIsMobileMenuOpen(!isMobileMenuOpen)
   }
 
@@ -50,18 +49,48 @@ function Header({scrollToHome,scrollToAboutMe,scrollToResume,scrollToPortfolio,s
     setIsMobileMenuOpen(!isMobileMenuOpen);
   }
 
-  window.addEventListener('scroll',changeBackground);
+  
+
+  //window.addEventListener('scroll',changeBackground);
+  
+   useEffect(()=>{
+    const wrapperDiv = document.querySelector(".wrapper");
+
+     function changeBackground(){
+
+    // if(window.scrollY >=3){
+    //    console.log(window.scrollY);
+    //   setHeader(true);
+    // }
+    // else
+    //   setHeader(false);
+
+    if(WrapperRef.current){
+      if(WrapperRef.current.scrollTop>=60){
+       setHeader(true);
+     }
+     else
+       setHeader(false);
 
 
+    }
+    console.log("The Wrapper Ref>>>", WrapperRef.current.scrollTop);
+
+   }
+
+  wrapperDiv.addEventListener("scroll", changeBackground);
+
+  console.log('Still loading');
 
 
+   },[WrapperRef])
 
   return (
     <>
     <section className = {header ? 'header-container active': 'header-container'}>
     <FontAwesomeIcon icon= {faMugHot} className=' logo-img fa-2x coffee-mug' style ={{color:'white'}}/> 
         <NavLinks 
-        scrollToHome = {scrollToHome}
+        scrollToHome = {scrollToTopOfContainer}
         scrollToAboutMe={scrollToAboutMe}
         scrollToResume = {scrollToResume}
         scrollToPortfolio = {scrollToPortfolio}

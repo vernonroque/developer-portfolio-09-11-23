@@ -20,6 +20,7 @@ function Home({HomeRef}) {
                  loop
               /> */}
                <TypeAnimation
+                  className = "typing box"
                   sequence={[
                     "I'm an Aspiring Front-End Developer",
                     2000,

@@ -1,4 +1,4 @@
-import React, {useState,useEffect,useRef} from 'react'
+import React, {useState,useEffect} from 'react'
 import './Header.css';
 import NavLinks from './NavLinks';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,7 +7,7 @@ import { faMugHot } from '@fortawesome/free-solid-svg-icons';
 // import {ImCross} from 'react-icons/im';
 
 
-function Header({scrollToHome,scrollToAboutMe,scrollToResume,scrollToPortfolio,scrollToContact,WrapperRef}) {
+function Header({scrollToAboutMe,scrollToResume,scrollToPortfolio,scrollToContact,WrapperRef}) {
 
   const [header,setHeader] = useState(false);
   const [isMobileMenuOpen,setIsMobileMenuOpen] = useState(false);

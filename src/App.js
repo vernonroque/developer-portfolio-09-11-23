@@ -6,8 +6,7 @@ import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import React, {useRef} from 'react';
-import resumePDF from './Vernon-Resume-08-08-23.pdf';
-import {Parallax, ParallaxLayer} from '@react-spring/parallax';
+//import {Parallax, ParallaxLayer} from '@react-spring/parallax';
 import resumePDFNew from './Vernon-Web-Developer-Resume-10-14-23.pdf';
 
 function App() {

@@ -27,4 +27,25 @@
     color:white;
     font-size:2.5rem;
     font-weight:500;
+    text-align:center;
+   
+    
+}
+
+@media only screen and (max-width:1000px){
+
+    .animated-typing{
+        font-size:2rem;
+        width:500px;
+
+    }
+}
+
+@media only screen and (max-width:690px){
+
+    .animated-typing{
+        font-size:1.5rem;
+        width:200px;
+
+    }
 }

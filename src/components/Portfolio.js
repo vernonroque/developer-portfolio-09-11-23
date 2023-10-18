@@ -20,12 +20,12 @@ function Portfolio({PortfolioRef}) {
   useEffect(() => {
     // Define a function to check the screen size and update the state
     const checkScreenSize = () => {
-        const smallScreen = window.innerWidth <= 500;
+        const smallScreen = window.innerWidth <= 600;
         setIsSmallScreen(smallScreen)  // Adjust the breakpoint as needed
-        if(smallScreen)
-          console.log("The screen is small");
-        else
-          console.log("The screen is big");
+        // if(smallScreen)
+        //   console.log("The screen is small");
+        // else
+        //   console.log("The screen is big");
    };
     // setIsSmallScreen(window.addEventListener('resize', checkScreenSize));
     window.addEventListener('resize', checkScreenSize);

@@ -74,13 +74,13 @@ function Header({scrollToAboutMe,scrollToResume,scrollToPortfolio,scrollToContac
 
 
     }
-    console.log("The Wrapper Ref>>>", WrapperRef.current.scrollTop);
+    //console.log("The Wrapper Ref>>>", WrapperRef.current.scrollTop);
 
    }
 
   wrapperDiv.addEventListener("scroll", changeBackground);
 
-  console.log('Still loading');
+  //console.log('Still loading');
 
 
    },[WrapperRef])

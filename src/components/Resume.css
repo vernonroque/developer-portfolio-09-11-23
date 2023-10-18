@@ -4,7 +4,7 @@
     background:rgb(248,249,250)
 }
 .resume-title{
-    padding:3rem;
+    padding:1.5rem;
     position:relative;
     margin: 0 auto; 
     text-align: center;
@@ -99,6 +99,7 @@
         text-decoration:underline;
         text-decoration-color:#c9a0dc;
     }
+    
     /* .resume-body{
         flex-direction:column;
     } */

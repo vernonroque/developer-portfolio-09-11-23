@@ -21,8 +21,8 @@
     width:100%; /* always use width:100% for dimensions of images */
     height:100%; /* always use height:100% for dimensions of images */
     border-radius:10px;
-    /* object-fit:cover;
-    object-position:center center; */
+    object-fit:cover;
+    object-position:center center; 
 }
 
 .img-overlay{
@@ -96,6 +96,14 @@
     object-position:center center; */
 }
 
+}
+
+@media only screen and (max-width:600px){
+  .project-card {
+   
+    width:400px;
+    height:600px;
+  }
 }
 
 @media only screen and (max-width:500px){

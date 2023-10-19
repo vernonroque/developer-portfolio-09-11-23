@@ -117,6 +117,7 @@ textArea{
     text-align:center;
     background:white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    color:black;
 
     font-family:'Apercu','Courier New', Courier, monospace;
     margin:1rem;

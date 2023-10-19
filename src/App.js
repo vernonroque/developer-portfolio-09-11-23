@@ -5,6 +5,7 @@ import AboutMe from './components/AboutMe';
 import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import React, {useRef} from 'react';
 //import {Parallax, ParallaxLayer} from '@react-spring/parallax';
 import resumePDFNew from './Vernon-Web-Developer-Resume-10-14-23.pdf';
@@ -79,6 +80,7 @@ const WrapperRef = useRef(null);
                     <Resume ResumeRef={ResumeRef} downloadResume={downloadResume}/>
                     <Portfolio PortfolioRef = {PortfolioRef}/>
                     <Contact ContactRef = {ContactRef}/>
+                    <Footer/>
                     </div>
                   </div>
           </div>

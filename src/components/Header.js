@@ -72,7 +72,6 @@ function Header({scrollToAboutMe,scrollToResume,scrollToPortfolio,scrollToContac
      else
        setHeader(false);
 
-
     }
     //console.log("The Wrapper Ref>>>", WrapperRef.current.scrollTop);
 
@@ -81,6 +80,10 @@ function Header({scrollToAboutMe,scrollToResume,scrollToPortfolio,scrollToContac
   wrapperDiv.addEventListener("scroll", changeBackground);
 
   //console.log('Still loading');
+
+  return () => {
+    wrapperDiv.removeEventListener('scroll', changeBackground);
+  };
 
 
    },[WrapperRef])

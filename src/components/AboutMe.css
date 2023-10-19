@@ -108,6 +108,7 @@ button{
     border-radius: 30px;
     border:none;
     font-weight:bold;
+    color:black;
 }
 button:hover{
     cursor:pointer;

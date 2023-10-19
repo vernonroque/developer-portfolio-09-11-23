@@ -18,6 +18,11 @@
     text-align:left;
     font-family:'Apercu','Courier New', Courier, monospace;
 }
+.experienceCard h3{
+    font-family:'League Spartan',Arial, Helvetica, sans-serif;
+    text-align:left;
+
+}
 .year-tab{
     background:#c9a0dc;
     padding:3px;

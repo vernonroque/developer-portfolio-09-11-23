@@ -99,24 +99,71 @@
 }
 
 @media only screen and (max-width:600px){
-  .project-card {
-   
+  
+  .project-card.movieDatabase {
     width:400px;
     height:600px;
+    background:url('../photos/movieDatabaseSmallz.png');
+    background-size:cover;
+    background-position: center center;
+  }
+  .project-card.amazonClone {
+    width:400px;
+    height:600px;
+    background:url('../photos/amazon-clone.png');
+    background-size:cover;
+    background-position: center center;
+  }
+  .project-card.redditClone {
+    width:400px;
+    height:600px;
+    background:url('../photos/redditSmallz.png');
+    background-size:cover;
+    background-position: center center;
+  }
+  .project-card.jammmingApp {
+    width:400px;
+    height:600px;
+    background:url('../photos/jammingSmallz.png');
+    background-size:cover;
+    background-position: center center;
+  }
+  .actual-image{
+    display:none;
   }
 }
 
-@media only screen and (max-width:500px){
-  .project-card {
-   
-    width:400px;
-    height:600px;
-  }
-}
 @media only screen and (max-width:400px){
-  .project-card {
+  .project-card.movieDatabase {
     width:300px;
     height:500px;
-    }
+    background:url('../photos/movieDatabaseSmallz.png');
+    background-size:cover;
+    background-position: center center;
+  }
+  .project-card.amazonClone {
+    width:300px;
+    height:500px;
+    background:url('../photos/amazon-clone.png');
+    background-size:cover;
+    background-position: center center;
+  }
+  .project-card.redditClone {
+    width:300px;
+    height:500px;
+    background:url('../photos/redditSmallz.png');
+    background-size:cover;
+    background-position: center center;
+  }
+  .project-card.jammmingApp {
+    width:300px;
+    height:500px;
+    background:url('../photos/jammingSmallz.png');
+    background-size:cover;
+    background-position: center center;
+  }
+  .actual-image{
+    display:none;
+  }
   }
   

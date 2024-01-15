@@ -11,6 +11,9 @@ import {BsFillTerminalFill} from 'react-icons/bs';
 import {BiLogoPostgresql} from 'react-icons/bi';
 import {AiFillChrome} from 'react-icons/ai';
 import {SiMocha} from 'react-icons/si';
+import { FaWordpress } from "react-icons/fa";
+import { DiJqueryLogo } from "react-icons/di";
+import { FaPython } from "react-icons/fa";
 
 
 
@@ -64,11 +67,21 @@ function SkillsCard() {
       <div className = "skillItem">
         <SiMocha className = 'reactIcon' />
         <h3>Mocha.js for testing</h3>
-        
       </div>
       <div className = "skillItem">
-        
+        <FaWordpress className = 'reactIcon' />
+        <h3>Wordpress</h3>
       </div>
+      <div className = "skillItem">
+        <DiJqueryLogo className = 'reactIcon' />
+        <h3>JQuery</h3>
+      </div>
+      <div className = "skillItem">
+        <FaPython className = 'reactIcon' />
+        <h3>Python</h3>
+      </div>
+
+
     </div>
     
   )

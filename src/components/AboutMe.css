@@ -39,6 +39,9 @@
     grid-gap:50px;
     padding:50px;
 }
+a > span{
+    font-weight: bolder;
+}
 
 .quick-facts{
     list-style-type:none;

@@ -41,6 +41,12 @@ function Resume({ResumeRef,downloadResume}) {
            
             <div className = "experience">
             <h1>Notable Work Experience</h1>
+            <ExperienceCard
+              year = "2024-present"
+              occupation = "Web Developer"
+              company = "Freelance Developer"
+              description = "I am currently assisting clients with html, css, javascript, speed optimization, and wordpress"
+               />
               <ExperienceCard
               year = "2022-present"
               occupation = "Math Teacher"

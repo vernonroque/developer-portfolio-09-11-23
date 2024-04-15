@@ -43,15 +43,21 @@ function Resume({ResumeRef,downloadResume}) {
             <h1>Notable Work Experience</h1>
             <ExperienceCard
               year = "2024-present"
-              occupation = "Web Developer"
-              company = "Freelance Developer"
-              description = "I am currently assisting clients with html, css, javascript, speed optimization, and wordpress"
+              occupation = "Freelance Web Developer"
+              company = "Cadenza Property Management"
+              description = "Assisting with backend development using mysql, docker containers, and node.js"
                />
-              <ExperienceCard
+            <ExperienceCard
+              year = "2023-present"
+              occupation = "Freelance Web Developer"
+              company = "Purgace"
+              description = "Responsible for site design and functionality using wordpress, css, and javascript. I am also responsible for API design using 3rd party platforms"
+               />
+               <ExperienceCard
               year = "2022-present"
               occupation = "Math Teacher"
               company = "Lexington Singapore School"
-              description = "I am currently a math teacher teaching 1st grade, 2nd grade, 3rd grade, and 4th grade math"
+              description = "I currently teach 1st, 2nd, 3rd, and 4th grade math"
                />
               <ExperienceCard 
                year = "2018-2022"

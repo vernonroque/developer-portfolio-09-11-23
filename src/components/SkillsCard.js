@@ -14,6 +14,8 @@ import {SiMocha} from 'react-icons/si';
 import { FaWordpress } from "react-icons/fa";
 import { DiJqueryLogo } from "react-icons/di";
 import { FaPython } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
 
 
 
@@ -80,7 +82,14 @@ function SkillsCard() {
         <FaPython className = 'reactIcon' />
         <h3>Python</h3>
       </div>
-
+      <div className = "skillItem">
+        <FaPhp className = 'reactIcon' />
+        <h3>Php</h3>
+      </div>
+      <div className = "skillItem">
+        <SiMysql className = 'reactIcon' />
+        <h3>MySQL</h3>
+      </div>
 
     </div>
     

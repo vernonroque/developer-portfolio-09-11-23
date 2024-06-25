@@ -16,6 +16,8 @@ import { DiJqueryLogo } from "react-icons/di";
 import { FaPython } from "react-icons/fa";
 import { FaPhp } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import { SiDjango } from "react-icons/si";
 
 
 
@@ -26,11 +28,17 @@ function SkillsCard() {
       <AiFillHtml5 className = "reactIcon"/>
       <h3>HTML</h3>
       </div>
+
       <div className = "skillItem">
       <BiLogoCss3 className = "reactIcon" />
       <h3>CSS</h3>
-
       </div>
+
+      <div className = "skillItem">
+      <SiTailwindcss className = "reactIcon" />
+      <h3>Tailwind CSS</h3>
+      </div>
+
       <div className = "skillItem">
       <BiLogoJavascript className = "reactIcon" />
       <h3>Javascript</h3>
@@ -81,6 +89,10 @@ function SkillsCard() {
       <div className = "skillItem">
         <FaPython className = 'reactIcon' />
         <h3>Python</h3>
+      </div>
+      <div className = "skillItem">
+        <SiDjango className = 'reactIcon' />
+        <h3>Django</h3>
       </div>
       <div className = "skillItem">
         <FaPhp className = 'reactIcon' />

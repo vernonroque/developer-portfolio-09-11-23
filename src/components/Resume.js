@@ -48,6 +48,13 @@ function Resume({ResumeRef,downloadResume}) {
               description = "Assisting with backend development using mysql, docker containers, and node.js"
                />
             <ExperienceCard
+              year = "2024-present"
+              occupation = "Software Developer Intern"
+              company = "Gala"
+              description = {`Working on an application that takes a customers question or response, and uses AI to return a valid answer. 
+                Technologies that I am using are React.js, Django, PHP, Flutter, Tailwind CSS.`}
+               />
+            <ExperienceCard
               year = "2023-present"
               occupation = "Freelance Web Developer"
               company = "Purgace"
@@ -65,7 +72,7 @@ function Resume({ResumeRef,downloadResume}) {
                company = "VIPKid"
                description = "I teach students remotely. Lessons cover different exercises ranging from reading, vocabulary, grammar, pronunciation, and listening."
                />
-                <ExperienceCard 
+              <ExperienceCard 
                year = "2017 - Present"
                occupation = "Jazz Musician"
                company = "Self-Employed"

@@ -43,14 +43,15 @@ function AboutMe({AboutMeRef,downloadResume}) {
  <h3>My Technical Toolkit</h3><br/>
  Through my full-stack training at Codecademy and active coding journey, I've become fluent in a comprehensive range of front-end and back-end technologies:
  <ul>
-    <li>HTML/CSS (foundational building blocks) </li>
+    <li>HTML/CSS and Tailwind CSS (foundational building blocks) </li>
     <li>JavaScript and JQuery (interactive functionalities)</li>
-    <li>React.js and Redux.js (powerful user interface frameworks)</li>
+    <li>React.js/Redux.js and Flutter (powerful user interface frameworks)</li>
     <li>Node.js and Express.js (flexible server-side tools)</li>
     <li>MySQL and PostgreSQL (relational databases)</li>
-    <li> Multiple web software environments (adaptability and expertise)</li>
+    <li> Multiple web software environments such as Google Cloud Functions (adaptability and expertise)</li>
     <li>Wordpress (quick and simple website template)</li>
     <li>Python (data science, machine learning, and AI)</li>
+    <li>Django (a high-level Python web framework that encourages rapid development and clean, pragmatic design)</li>
  </ul>
  <br/>
  

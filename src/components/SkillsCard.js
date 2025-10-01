@@ -18,6 +18,8 @@ import { FaPhp } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { SiDjango } from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
+import { FaAws } from "react-icons/fa";
 
 
 
@@ -101,6 +103,14 @@ function SkillsCard() {
       <div className = "skillItem">
         <SiMysql className = 'reactIcon' />
         <h3>MySQL</h3>
+      </div>
+      <div className = "skillItem">
+        <IoLogoFirebase className = 'reactIcon' />
+        <h3>Google Firebase</h3>
+      </div>
+      <div className = "skillItem">
+        <FaAws className = 'reactIcon' />
+        <h3>Amazon Web Services</h3>
       </div>
 
     </div>

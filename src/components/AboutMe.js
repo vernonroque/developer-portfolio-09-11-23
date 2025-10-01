@@ -19,13 +19,13 @@ function AboutMe({AboutMeRef,downloadResume}) {
           </div>
           <section className="aboutMe-body">
             <div className ="paragraph">
-              <h2> I'm <span className ="name">Vernon Roque,</span> A Web Developer</h2><br/>
+              <h2> I'm <span className ="name">Vernon Roque,</span> A Software Developer</h2><br/>
               <p>
 
               <h3>USC Engineer + Creative Architect = Front-End Creative Innovation </h3>
               <br/>
               
- I'm Vernon Roque, a front-end developer with a passion for creating websites that aren't just functional—they're captivating experiences. 
+ I'm Vernon Roque, a Fullstack Software Developer with a passion for creating websites and applications that aren't just functional—they're captivating experiences. 
  I blend my engineering background, creative artistry, and global perspective to craft digital spaces that resonate with your audience.
  <br/><br/>
   
@@ -63,7 +63,7 @@ function AboutMe({AboutMeRef,downloadResume}) {
   
  <h3>Ready to Harmonize?</h3>
  <br/> 
- Let's create a website that speaks to your audience and elevates your brand. 
+ Let's create a website or application that speaks to your audience and elevates your brand. 
  Explore my portfolio to see my work in action, and then let's chat about your vision.
  I look forward to hearing from you!
  <br/><br/>
@@ -78,7 +78,7 @@ Vernon Roque
               <li className= "list-item"><span className="type">Name:</span> Vernon Roque</li>
               <li className= "list-item"><span className="type">Email:</span > <span className ="email">vroque88@gmail.com</span></li>
               <li className= "list-item"><span className="type">From:</span> Los Angeles, California</li>
-              <li className= "list-item"><span className="type">Intent:</span> Front-End Web Developer</li>
+              <li className= "list-item"><span className="type">Intent:</span> Fullstack Software Developer</li>
               <button className ="aboutMe-button" onClick={handleClick}>Download CV <FaDownload/></button>
             </ul>
            

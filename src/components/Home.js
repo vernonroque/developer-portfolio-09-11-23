@@ -22,7 +22,7 @@ function Home({HomeRef}) {
                <TypeAnimation
                   className = "typing box"
                   sequence={[
-                    "I'm a Front-End Developer",
+                    "I'm a Fullstack Software Developer",
                     2000,
                     "I'm a Jazz Musician",
                     2000,

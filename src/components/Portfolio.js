@@ -4,7 +4,7 @@ import movieDatabase from '../photos/movieDatabase.png';
 //import movieDatabaseSmallz from '../photos/movieDatabaseSmallz.png';
 import ProjectItem from './ProjectItem';
 import amazonClone from '../photos/amazon-clone.png'
-import redditThumbnail from '../photos/reddit-thumbnail.png';
+//import redditThumbnail from '../photos/reddit-thumbnail.png';
 //import redditSmallz from '../photos/redditSmallz.png';
 import jammmingApp from '../photos/jammmingApp.png'
 //import jammingSmallz from '../photos/jammingSmallz.png';
@@ -61,7 +61,7 @@ function Portfolio({PortfolioRef}) {
             name = "amazonClone"
 
           />
-           <ProjectItem
+           {/* <ProjectItem
             className="project"
             img = {redditThumbnail}
             url = "https://glittering-fairy-46bf3d.netlify.app/"
@@ -69,7 +69,7 @@ function Portfolio({PortfolioRef}) {
             technologies = "React.js, Redux.js"
             title = "Reddit Clone"
             name = "redditClone"
-          />
+          /> */}
            <ProjectItem
             className="project"
             img = {jammmingApp}

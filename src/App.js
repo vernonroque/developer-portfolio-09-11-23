@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import React, {useRef} from 'react';
 //import {Parallax, ParallaxLayer} from '@react-spring/parallax';
-import resumePDFNew from './Vernon-Resume-6-25-24.pdf';
+import resumePDFNew from './Vernon-Resume-09-30-25.pdf';
 
 function App() {
   //initializing variables with useRef hook
@@ -49,7 +49,7 @@ const WrapperRef = useRef(null);
   const downloadResume = () => {
     const link = document.createElement('a');
     link.href = resumePDFNew;
-    link.download = './Vernon-Resume-6-25-24.pdf'; // Specify the desired file name
+    link.download = './Vernon-Resume-09-30-25.pdf'; // Specify the desired file name
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

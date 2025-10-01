@@ -26,7 +26,7 @@ function Resume({ResumeRef,downloadResume}) {
             <div className="education">
             <h1>Education</h1>
                 <EducationCard
-                  year = "2021-present"
+                  year = "2021-2024"
                   degree = "Fullstack Engineering Course"
                   university = "Codecademy Career Path"
                   description = "Studying front-end technologies such as html, css, and javascript as well as frameworks react/redux. Studying back-end technologies such as node.js, express.js, and posgresql. Have built several different projects regarding these technologies."
@@ -43,25 +43,27 @@ function Resume({ResumeRef,downloadResume}) {
             <h1>Notable Work Experience</h1>
             <ExperienceCard
               year = "2024-present"
-              occupation = "Freelance Web Developer"
+              occupation = "Fullstack Software Developer"
               company = "Cadenza Property Management"
-              description = "Assisting with backend development using mysql, docker containers, and node.js"
+              description = {`I manage and maintain the admin website. I manage the backend server and database. I build scripts to automate payroll and budget reports.
+                Technologies that I use are javascript/jquery, node.js, express.js, mysql, python, github, github action,
+                docker containers, aws ec2, aws rds, aws ecs, aws event bridge, and aws lambda.`}
                />
             <ExperienceCard
-              year = "2024-present"
+              year = "2024-Mar 2025"
               occupation = "Software Developer Intern"
               company = "Gala"
-              description = {`Working on an application that takes a customers question or response, and uses AI to return a valid answer. 
+              description = {`Worked on an application that takes a customers question or response, and uses AI to return a valid answer. 
                 Technologies that I am using are React.js, Django, PHP, Flutter, Tailwind CSS.`}
                />
             <ExperienceCard
-              year = "2023-present"
+              year = "2023-2025"
               occupation = "Freelance Web Developer"
               company = "Purgace"
               description = "Responsible for site design and functionality using wordpress, css, and javascript. I am also responsible for API design using 3rd party platforms"
                />
                <ExperienceCard
-              year = "2022-present"
+              year = "2022-2025"
               occupation = "Math Teacher"
               company = "Lexington Singapore School"
               description = "I currently teach 1st, 2nd, 3rd, and 4th grade math"

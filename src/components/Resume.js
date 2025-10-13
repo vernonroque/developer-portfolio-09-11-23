@@ -42,7 +42,7 @@ function Resume({ResumeRef,downloadResume}) {
             <div className = "experience">
             <h1>Notable Work Experience</h1>
             <ExperienceCard
-              year = "2024-present"
+              year = "Mar 2024 - present"
               occupation = "Fullstack Software Developer"
               company = "Cadenza Property Management"
               description = {`I manage and maintain the admin website. I manage the backend server and database. I build scripts to automate payroll and budget reports.
@@ -50,38 +50,38 @@ function Resume({ResumeRef,downloadResume}) {
                 docker containers, aws ec2, aws rds, aws ecs, aws event bridge, and aws lambda.`}
                />
             <ExperienceCard
-              year = "2024-Mar 2025"
+              year = "Jan 2024 - Mar 2024"
               occupation = "Software Developer Intern"
               company = "Gala"
               description = {`Worked on an application that takes a customers question or response, and uses AI to return a valid answer. 
                 Technologies that I am using are React.js, Django, PHP, Flutter, Tailwind CSS.`}
                />
             <ExperienceCard
-              year = "2023-2025"
+              year = "Dec 2023 - Jan 2024"
               occupation = "Freelance Web Developer"
               company = "Purgace"
               description = "Responsible for site design and functionality using wordpress, css, and javascript. I am also responsible for API design using 3rd party platforms"
                />
                <ExperienceCard
-              year = "2022-2025"
+              year = "Sep 2022 - Dec 2023"
               occupation = "Math Teacher"
               company = "Lexington Singapore School"
               description = "I currently teach 1st, 2nd, 3rd, and 4th grade math"
                />
               <ExperienceCard 
-               year = "2018-2022"
-               occupation = "Enlgish as a Second Language (ESL) Teacher"
+               year = "Jul 2016 - Aug 2022"
+               occupation = "English as a Second Language (ESL) Teacher"
                company = "VIPKid"
                description = "I teach students remotely. Lessons cover different exercises ranging from reading, vocabulary, grammar, pronunciation, and listening."
                />
               <ExperienceCard 
-               year = "2017 - Present"
-               occupation = "Jazz Musician"
+               year = "Sep 2016 - Jul 2016"
+               occupation = "English Teacher"
                company = "Self-Employed"
-               description = "Played jazz saxophone while traveling through South America. I play the tenor saxophone. I also enjoy playing the blues, bossa nova, and cumbia."
+               description = "Taught English as a second language internationally"
                />
                <ExperienceCard 
-               year = "2012-2015"
+               year = "Jan 2012 - Aug 2015"
                occupation = "Systems Installation Engineer"
                company = "Panasonic Avionics Corporation"
                description = "Designed and developed Global Communication Systems and In-Flight Entertainment Systems interconnects to ensure proper interfacing with existing aircraft equipment for international airlines such as Etihad Airways and China Southern Airlines.Prepared engineering schematics with AutoCAD."

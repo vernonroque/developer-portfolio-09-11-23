@@ -20,12 +20,17 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiDjango } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { FaAws } from "react-icons/fa";
-
+import { BsRobot} from "react-icons/bs";
 
 
 function SkillsCard() {
   return (
     <div className="skillsCard">
+      <div className = "skillItem">
+      <BsRobot className = "reactIcon"/>
+      <h3>Claude AI</h3>
+      </div>
+
       <div className = "skillItem">
       <AiFillHtml5 className = "reactIcon"/>
       <h3>HTML</h3>

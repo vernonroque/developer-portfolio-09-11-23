@@ -51,6 +51,7 @@ function AboutMe({AboutMeRef,downloadResume}) {
     <li> Multiple web software environments such as Google Cloud Functions (adaptability and expertise)</li>
     <li>Wordpress (quick and simple website template)</li>
     <li>Python (data science, machine learning, and AI)</li>
+    <li>Claude AI (automation and Optical Character Recognition)</li>
     <li>Django (a high-level Python web framework that encourages rapid development and clean, pragmatic design)</li>
  </ul>
  <br/>

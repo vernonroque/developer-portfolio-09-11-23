@@ -7,6 +7,7 @@ import amazonClone from '../photos/amazon-clone.png'
 //import redditThumbnail from '../photos/reddit-thumbnail.png';
 //import redditSmallz from '../photos/redditSmallz.png';
 import jammmingApp from '../photos/jammmingApp.png'
+import receiptParserApi from '../photos/receiptParserApi.png'
 //import jammingSmallz from '../photos/jammingSmallz.png';
 
 
@@ -51,7 +52,7 @@ function Portfolio({PortfolioRef}) {
             title = "Movie Database"
             name = "movieDatabase"
           />
-            <ProjectItem
+          <ProjectItem
             className="project"
             img = {amazonClone}
             url = "https://clone-bfd8a.web.app/" 
@@ -70,7 +71,7 @@ function Portfolio({PortfolioRef}) {
             title = "Reddit Clone"
             name = "redditClone"
           /> */}
-           <ProjectItem
+          <ProjectItem
             className="project"
             img = {jammmingApp}
             url = "https://sweet-malasada-1bb69a.netlify.app/"
@@ -78,6 +79,15 @@ function Portfolio({PortfolioRef}) {
             technologies = "React.js"
             title = "Jammming App"
             name = "jammmingApp"
+          />
+          <ProjectItem
+            className="project"
+            img = {receiptParserApi}
+            url = "https://ilovesreceipt.com/"
+            description = "An API that parses an .jpg, .png, or .pdf of a receipt or invoice and converts it into json data structure."
+            technologies = "AI, Python, Supabase, Stripe API, Railway, Vercel, HTML, CSS, Javascript"
+            title = "I Love Receipt"
+            name = "iLoveReceipt"
           />
              
           </section>

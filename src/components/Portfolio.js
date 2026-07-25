@@ -8,6 +8,7 @@ import amazonClone from '../photos/amazon-clone.png'
 //import redditSmallz from '../photos/redditSmallz.png';
 import jammmingApp from '../photos/jammmingApp.png'
 import receiptParserApi from '../photos/receiptParserApi.png'
+import receiptToSpreadsheetApp from '../photos/receipt-to-spreadsheet-app.png'
 //import jammingSmallz from '../photos/jammingSmallz.png';
 
 
@@ -88,6 +89,15 @@ function Portfolio({PortfolioRef}) {
             technologies = "AI, Python, Supabase, Stripe API, Railway, Vercel, HTML, CSS, Javascript"
             title = "I Love Receipt"
             name = "iLoveReceipt"
+          />
+          <ProjectItem
+            className="project"
+            img = {receiptToSpreadsheetApp}
+            url = "https://receipt-to-spreadsheet-app.netlify.app/"
+            description = "An application that converts receipt data into a spreadsheet. Features include: bulk uploading, duplication detection, and currency conversion. You can also use download a csv of the data. This application uses the I Love Receipt API to parse the receipts."
+            technologies = "AI, Python, Supabase, Stripe API, Railway, Vercel, HTML, CSS, Javascript"
+            title = "Receipt to Spreadsheet App"
+            name = "receiptToSpreadsheetApp"
           />
              
           </section>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Resume.css';
-import EducationCard from './EducationCard.js';
+// import EducationCard from './EducationCard.js';
 import ExperienceCard from './ExperienceCard';
 import SkillsCard from './SkillsCard';
 import { FaDownload } from 'react-icons/fa';

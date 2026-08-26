@@ -23,21 +23,21 @@ function Resume({ResumeRef,downloadResume}) {
           </div>
           <section className="resume-body">
          
-            <div className="education">
-            <h1>Education</h1>
-                <EducationCard
-                  year = "2021-2024"
-                  degree = "Fullstack Engineering Course"
-                  university = "Codecademy Career Path"
-                  description = "Studying front-end technologies such as html, css, and javascript as well as frameworks react/redux. Studying back-end technologies such as node.js, express.js, and posgresql. Have built several different projects regarding these technologies."
-                />
-                <EducationCard 
-                    year = "2008-2011" 
-                    degree = "Bachelors Degree in Electrical Engineering"
-                    university = "University of Southern California"
-                    description = "Emphasis on VLSI and analog circuit design and analysis. Used technologies such as Matlab, Verilog/VHDL, SPICE, and C++."
-                />
-            </div>
+            {/* <div className="education">
+              <h1>Education</h1>
+                  <EducationCard
+                    year = "2021-2024"
+                    degree = "Fullstack Engineering Course"
+                    university = "Codecademy Career Path"
+                    description = "Studying front-end technologies such as html, css, and javascript as well as frameworks react/redux. Studying back-end technologies such as node.js, express.js, and posgresql. Have built several different projects regarding these technologies."
+                  />
+                  <EducationCard 
+                      year = "2008-2011" 
+                      degree = "Bachelors Degree in Electrical Engineering"
+                      university = "University of Southern California"
+                      description = "Emphasis on VLSI and analog circuit design and analysis. Used technologies such as Matlab, Verilog/VHDL, SPICE, and C++."
+                  />
+            </div> */}
            
             <div className = "experience">
             <h1>Notable Work Experience</h1>
@@ -69,7 +69,7 @@ function Resume({ResumeRef,downloadResume}) {
               company = "Lexington Singapore School"
               description = "I currently teach 1st, 2nd, 3rd, and 4th grade math"
                />
-              <ExperienceCard 
+              {/* <ExperienceCard 
                year = "Jul 2016 - Aug 2022"
                occupation = "English as a Second Language (ESL) Teacher"
                company = "VIPKid"
@@ -92,7 +92,7 @@ function Resume({ResumeRef,downloadResume}) {
                occupation = "Product Realization Intern at T-Mobile USA"
                company = "T-Mobile Inc"
                description = "Tested Wi-Fi calling and collaborated with the engineering team to resolve any issues. Developed a basic understanding of wireless GSM/GPRS, handset client, content, and mobile web."
-               />
+               /> */}
               
             </div>
 

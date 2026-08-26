@@ -22,7 +22,7 @@ function AboutMe({AboutMeRef,downloadResume}) {
               <h2> I'm <span className ="name">Vernon Roque,</span> A Software Developer</h2><br/>
               <p>
 
-              <h3>USC Engineer + Creative Architect = Front-End Creative Innovation </h3>
+              <h3>USC Engineer + Creative Architect = Creative Innovation </h3>
               <br/>
               
  I'm Vernon Roque, a Fullstack Software Developer with a passion for creating websites and applications that aren't just functional—they're captivating experiences. 
@@ -31,7 +31,7 @@ function AboutMe({AboutMeRef,downloadResume}) {
   
  <h3>My Path to Pixel Perfection</h3>
  <br/>
- My journey to web development began with a foundation in electrical engineering from USC, and experience as a systems installation engineer and mathematics teacher. 
+ My journey to web development began with a foundation in electrical engineering from USC, and experience as a systems engineer and mathematics teacher. 
  These roles taught me the precision and problem-solving skills that now power my code. 
  <br/><br/>
   
@@ -41,7 +41,7 @@ function AboutMe({AboutMeRef,downloadResume}) {
 
   
  <h3>My Technical Toolkit</h3><br/>
- Through my full-stack training at Codecademy and active coding journey, I've become fluent in a comprehensive range of front-end and back-end technologies:
+
  <ul>
     <li>HTML/CSS and Tailwind CSS (foundational building blocks) </li>
     <li>JavaScript and JQuery (interactive functionalities)</li>
@@ -53,6 +53,19 @@ function AboutMe({AboutMeRef,downloadResume}) {
     <li>Python (data science, machine learning, and AI)</li>
     <li>Claude AI (automation and Optical Character Recognition)</li>
     <li>Django (a high-level Python web framework that encourages rapid development and clean, pragmatic design)</li>
+    <li>Supabase (backend as a service)</li>
+    <li>Railway (cloud development platform)</li>
+    <li>Vercel (cloud development platform)</li>
+    <li> Github Actions (continuous integration and deployment)</li>
+    <li> Amazon Web Services (cloud computing platform)</li>
+    <li> AWS EC2 (virtual servers in the cloud)</li>
+    <li> AWS RDS (relational database service)</li>
+    <li> AWS ECS (container orchestration service)</li>
+    <li> AWS EventBridge (event bus service)</li>
+    <li> AWS API Gateway (API management tool)</li>
+    <li> AWS Lambda (serverless computing service)</li>
+    <li> Google Firebase (cloud computing platform)</li>
+    <li>Docker (containerization platform)</li>
  </ul>
  <br/>
  

@@ -22,7 +22,7 @@ function AboutMe({AboutMeRef,downloadResume}) {
               <h2> I'm <span className ="name">Vernon Roque,</span> A Software Developer</h2><br/>
               <p>
 
-              <h3>USC Engineer + Creative Architect = Creative Innovation </h3>
+              <h3>USC Engineer + Creative Architect = Innovation </h3>
               <br/>
               
  I'm Vernon Roque, a Fullstack Software Developer with a passion for creating websites and applications that aren't just functional—they're captivating experiences. 

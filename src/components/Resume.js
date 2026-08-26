@@ -45,8 +45,8 @@ function Resume({ResumeRef,downloadResume}) {
               year = "Mar 2024 - present"
               occupation = "Fullstack Software Developer"
               company = "Cadenza Property Management"
-              description = {`I manage and maintain the admin website. I manage the backend server and database. I build scripts to automate payroll and budget reports.
-                I automate owners reports. I help with building the pricing models. I help with building the AI chat bot that retrieves property information.
+              description = {`I manage and maintain the admin website that retrieves property information. I manage the backend server and database. I build scripts to automate payroll and budget reports.
+                I automate owners reports. I help with building the pricing models. I'm currently collaborating on an AI chat bot project that responds to guest messages.
                 Technologies that I use are javascript/jquery, node.js, express.js, mysql, python, github, github action,
                 docker containers, aws ec2, aws rds, aws ecs, aws event bridge, aws api gateway, and aws lambda.`}
                />
